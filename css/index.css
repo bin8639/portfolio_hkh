@@ -3,3 +3,87 @@
 @import "common.css";
 
 /* 공통구역을 제외한 메인페이지 스타일 */
+#section {
+    position: relative;
+}
+
+.slideOuter {
+    position: relative;
+}
+
+.slideInner .slideBg > img {
+    width: 100%;
+}
+
+.slideInner div:nth-child(2) {
+    display: none;
+}
+
+.slideOuter .dotBox {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideOuter .dotBox a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.slideOuter .dotBox a.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+.section_box1 {
+    font-size: 17px;
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.section_box1 .mid_nav > li {
+    float: left;
+    width: 25%;
+    padding: 25px 0;
+}
+
+.section_box1 .mid_nav > li > a {
+    display: block;
+    height: 200px;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.section_box1 .mid_nav > li > a > p {
+    padding-top: 15px;
+}
+
+.section_box2 {
+    padding: 70px 0;
+    overflow: hidden;
+    color: #333;
+}
+
+.section_box2 .product .box2_img {
+    float: left;
+    width: 50%;
+}
+
+.section_box2 .product .text {
+    float: right;
+    width: 45%;
+}
+
+.section_box2 .product .text > h2 {
+    padding: 20px 0;
+    font-size: 35px;
+}
+
+.section_box2 .product .text > p {
+    padding: 0 0 70px;
+    font-size: 15px;
+}
