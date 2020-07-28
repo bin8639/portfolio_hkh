@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* 헤더 구역 푸터구역 등 기타 공통구역에 대한 스타일 */
+
+.row {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
