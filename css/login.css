@@ -31,9 +31,6 @@
 .login_nav {
     width: 100%;
     height: 120px;
-}
-
-.login_nav {
     text-align: center;
 }
 
@@ -59,28 +56,81 @@
     text-align: center;
     padding: 50px 0 40px;
     height: 500px;
+    border-bottom: 1px solid #ccc;
 }
 
-.login_form > p {
+.login_form .login_text {
+    border-bottom: 1px solid #ccc;
+    border-width: 18%;
+    width: 18%;
+    padding-bottom: 30px;
+}
+
+.login_form .login_text  > p {
     font-size: 12px;
     padding: 15px 0;
     color: #555;
 }
 
-.login_form .login_content .idpw_box {
+.login_form .login_text .login_content .idpw_box {
     display: inline-block;
     margin-left: 5px;
 }
 
-.login_form .login_content .idpw_box label {
-    padding-right: 10px;
+.login_form .login_text .login_content .idpw_box label {
+    display: inline-block;
+    width: 50px;
     font-size: 12px;
     color: #555;
     font-weight: bold;
 }
 
-.login_form .login_content .idpw_box input {
+.login_form .login_text .login_content .idpw_box input {
     background: #f6f6f6;
-    padding: 2px 4px 0;
+    padding: 3px 4px 0;
+    margin: 3px 0;
+    width: 150px;
+    height: 23px;
     border: 1px solid #ccc;
+    vertical-align: center;
 }
+
+.login_form .login_content button {
+    width: 86px;
+    height: 51px;
+    border: none;
+    color: #fff;
+    background: #353535;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login_form .find_idpw {
+    padding: 30px 44px 0;
+}
+
+.login_form .find_idpw > p { 
+    font-size: 11px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    color: #777;
+}
+
+.login_form .find_idpw > p:first-child {
+    margin-left: 11px;
+}
+
+.login_form .find_idpw > p > button {
+    width: 100px;
+    height: 22px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    background: #f3f3f3;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+
