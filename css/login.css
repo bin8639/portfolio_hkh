@@ -39,7 +39,7 @@
     padding: 45px 35px;
 }
 
-.login_nav ul li:first-child {
+.login_nav ul li:nth-child(1) {
     font-size: 30px;
     color: #333;
     font-weight: bold;
@@ -92,7 +92,7 @@
     width: 150px;
     height: 23px;
     border: 1px solid #ccc;
-    vertical-align: center;
+    vertical-align: middle;
 }
 
 .login_form .login_content button {
