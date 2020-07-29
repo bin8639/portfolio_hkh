@@ -124,3 +124,44 @@
 .logoNav:hover .decoBox {
     display: block;
 }
+
+#footer {
+    text-align: center;
+}
+
+.sns {
+    font-size: 30px;
+    color: #515151;
+    padding: 50px 0;
+}
+
+.sns > a {
+    padding-right: 5px;
+}
+
+.information{
+    font-size: 12px;
+}
+
+.information a:first-child {
+    padding-right: 20px;
+}
+
+.information a:nth-child(2),
+.information a:nth-child(3) {
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
+}
+
+.copyright {
+    font-size: 12px;
+    padding: 15px 0 30px;
+}
+
+.copyright .address {
+    padding-bottom: 9px;
+}
+
+.copyright .copy {
+    padding-bottom: 20px;
+}

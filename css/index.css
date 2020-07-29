@@ -5,19 +5,33 @@
 /* 공통구역을 제외한 메인페이지 스타일 */
 #section {
     position: relative;
+    padding-top: 120px;
 }
 
 .slideOuter {
     position: relative;
 }
 
-.slideInner .slideBg > img {
+.slideInner {
     width: 100%;
+    height: 686px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
-.slideInner div:nth-child(2) {
-    display: none;
+.slideInner:first-child {
+    background-image: url(../images/main_visual_1.jpg);
 }
+
+.slideInner:nth-child(2) {
+    background-image: url(../images/main_visual_2.jpg);
+}
+
+/* .slideInner div:nth-child(2) {
+    display: none;
+} */
 
 .slideOuter .dotBox {
     position: absolute;
@@ -62,6 +76,11 @@
     padding-top: 15px;
 }
 
+.section_box1 .mid_nav > li > a:hover img {
+    transform: translateY(-12px);
+    transition: all 0.4s;
+}
+
 .section_box2 {
     padding: 70px 0;
     overflow: hidden;
@@ -97,11 +116,102 @@
     background: #fff;
 }
 
+.section_box2 .product .text > button:hover {
+    background: #f0f0f0;
+}
+
 .section_box3 {
     width: 100%;
     height: 281px;
     color: #333;
     background: #f1f1f1;
     padding: 70px 0;
+    text-align: center;
 }
 
+.section_box3 .info > ul > li {
+    float: left;
+    width: 50%;
+}
+
+.section_box3 .info > ul > li > a {
+    display: block;
+    background: #fff;
+    border: 2px solid #333;
+    margin: 0 45px;
+    padding: 38px 0;
+}
+
+.section_box3 .info > ul > li > a > h2 {
+    font-size: 22px;
+}
+
+.section_box3 .info > ul > li > a > p {
+    font-size: 13px;
+    padding-top: 15px; 
+}
+
+.section_box3 .info > ul > li > a:hover {
+    background: #333;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.section_box4 {
+    padding: 110px 0 100px;
+    text-align: center;
+    height: 556px;
+}
+
+.section_box4 .gallery > ul > li {
+    float: left;
+    width: 33.3333%;
+}
+
+.section_box4 .gallery > ul > li > a > p {
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.section_box4 .gallery > ul > li > a > p:hover {
+    text-decoration: underline;
+}
+
+.section_box5 {
+    width: 100%;
+    height: 300px;
+    background: url(../images/bg_tel2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.section_box5 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 0 20px;
+    padding: 45px 5px 10px;
+}
+
+
+.section_box5 .overlay .text > h1 {
+    font-size: 30px;
+    font-weight: normal;
+    opacity: 0.3;
+}
+
+.section_box5 .overlay .text > h2 {
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+.section_box5 .overlay .text > p {
+    font-size: 14px;
+    padding-top: 12px;
+}
