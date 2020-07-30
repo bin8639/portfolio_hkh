@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+#subpage_2 {
+    padding-top: 120px;
+    position: relative;
+}
+
+.subpage2_imgbox {
+    background-image: url(../images/sub_img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    position: relative;
+}
+
+.subpage2_imgbox .text {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px #333;
+}
+
+.subpage2_nav {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.subpage2_nav ul li {
+    display: inline-block;
+    padding: 45px 35px;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.business {
+    text-align: center;
+    height: 1120px;
+    border-bottom: 1px solid #ccc;
+}
+
+.business .textbox {
+    padding-top: 20px;
+}
+
+.business .textbox > p {
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.business .textbox > p:nth-child(1) {
+    font-size: 22px;
+    color: #0071c5;
+}
+
+.business .textbox > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.business .textbox > p:nth-child(3) {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.business .bot_img {
+    padding-top: 15px;
+}
