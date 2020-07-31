@@ -98,120 +98,123 @@
             </ul>
         </div>
 
-        <div class="join_box row">
-            <h2>회원가입</h2>
-            <form action="#" method="post" class="join_form">
-                <fieldset>
-                    <legend>회원가입양식</legend>
-                    <p class="regist_info">회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.<br>
-                        회원님의 개인정보를 신중하게 보호하려 노력하고 있으며 회원님의 동의없이는 기재하신 회원정보가 누출되지 않습니다.<br>
-                        자세한 내용은 개인정보취급방침에서 확인하세요.</p>
-                    <ul class="info_list">
-                        <li>
-                            <label for="name_lbl" class="tit_lbl">이름</label>
-                            <div class="info_content">
-                                <input class="w320" type="text" id="name_lbl">
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="id_lbl" class="tit_lbl">아이디</label>
-                            <div class="info_content">
-                                <input class="w320" type="text" id="id_lbl">
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="pw_lbl" class="tit_lbl">비밀번호</label>
-                            <div class="info_content">
-                                <input class="w320" type="password" id="pw_lbl">
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="pwcheck_lbl" class="tit_lbl">비밀번호 확인</label>
-                            <div class="info_content">
-                                <input class="w320" type="password" id="pwcheck_lbl">
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="phone_lbl" class="tit_lbl">연락처</label>
-                            <div class="info_content">
-                                <input class="w120" type="text" id="phone_lbl">
-                                <input class="w120" type="text" id="phone_lbl">
-                                <input class="w120" type="text" id="phone_lbl">
-                            </div>
-                        </li>
-
-                        <li>
-                            <label class="tit_lbl">문자 수신여부</label>
-                            <div class="info_content msg_agree">
-                                <input type="radio" name="msg_agree" id="agree" value="수신">
-                                <label for="agree">수신</label>
-                                <input type="radio" name="msg_agree" id=disagree value="수신거부">
-                                <label for="disagree">수신거부</label>
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="email_lbl" class="tit_lbl">이메일</label>
-                            <div class="info_content">
-                                <input type="text" id="email_lbl">
-                                <span>@</span>
-                                <input class="w160" type="text" id="domain" disabled>
-                                <label class="email_box">
-                                    <select id="email_choice" class="w160">
-                                        <option value="nochoice">-이메일선택-</option>
-                                        <option value="naver.com">naver.com</option>
-                                        <option value="daum.net">daum.net</option>
-                                        <option value="google.co.kr">google.co.kr</option>
-                                        <option value="self">직접입력</option>
+        <div class="register_box">
+            <div class="join_box row">
+                <h2>회원가입</h2>
+                <form action="#" method="post" class="join_form">
+                    <fieldset>
+                        <legend>회원가입양식</legend>
+                        <p class="regist_info">회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.<br>
+                            회원님의 개인정보를 신중하게 보호하려 노력하고 있으며 회원님의 동의없이는 기재하신 회원정보가 누출되지 않습니다.<br>
+                            자세한 내용은 개인정보취급방침에서 확인하세요.</p>
+                        <ul class="info_list">
+                            <li>
+                                <label for="name_lbl" class="tit_lbl">이름</label>
+                                <div class="info_content">
+                                    <input class="w320" type="text" id="name_lbl">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="id_lbl" class="tit_lbl">아이디</label>
+                                <div class="info_content">
+                                    <input class="w320" type="text" id="id_lbl">
+                                    <input type="submit" value="중복확인">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="pw_lbl" class="tit_lbl">비밀번호</label>
+                                <div class="info_content">
+                                    <input class="w320" type="password" id="pw_lbl">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="pwcheck_lbl" class="tit_lbl">비밀번호 확인</label>
+                                <div class="info_content">
+                                    <input class="w320" type="password" id="pwcheck_lbl">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="phone_lbl" class="tit_lbl">연락처</label>
+                                <div class="info_content">
+                                    <input class="w120" type="text" id="phone_lbl">
+                                    <input class="w120" type="text" id="phone_lbl">
+                                    <input class="w120" type="text" id="phone_lbl">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label class="tit_lbl">문자 수신여부</label>
+                                <div class="info_content msg_agree">
+                                    <input type="radio" name="msg_agree" id="agree" value="수신">
+                                    <label for="agree">수신</label>
+                                    <input type="radio" name="msg_agree" id=disagree value="수신거부">
+                                    <label for="disagree">수신거부</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="email_lbl" class="tit_lbl">이메일</label>
+                                <div class="info_content">
+                                    <input type="text" id="email_lbl">
+                                    <span>@</span>
+                                    <input class="w160" type="text" id="domain" disabled>
+                                    <label class="email_box">
+                                        <select id="email_choice" class="w160">
+                                            <option value="nochoice">-이메일선택-</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="google.co.kr">google.co.kr</option>
+                                            <option value="self">직접입력</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label class="tit_lbl">이메일 수신여부</label>
+                                <div class="info_content email_agree">
+                                    <input type="radio" name="email_agree" id="agree" value="수신">
+                                    <label for="agree">수신</label>
+                                    <input type="radio" name="email_agree" id=disagree value="수신거부">
+                                    <label for="disagree">수신거부</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <label for="birthday" class="tit_lbl">생년월일</label>
+                                <div class="info_content">
+                                    <input class="w160" type="text" id="years" placeholder="년">
+                                    <select id="month" class="w160">
+                                        <option value="nochoice">월</option>
+                                        <option value="">1월</option>
+                                        <option value="">2월</option>
+                                        <option value="">3월</option>
+                                        <option value="">4월</option>
+                                        <option value="">5월</option>
+                                        <option value="">6월</option>
+                                        <option value="">7월</option>
+                                        <option value="">8월</option>
+                                        <option value="">9월</option>
+                                        <option value="">10월</option>
+                                        <option value="">11월</option>
+                                        <option value="">12월</option>
                                     </select>
-                                </label>
+                                    <input class="w160" type="text" id="day" placeholder="일">
+                                </div>
+                            </li>
+    
+                            <div class="btn">
+                                <input type="submit" value="확인">
+                                <input type="reset" value="취소">
                             </div>
-                        </li>
-
-                        <li>
-                            <label class="tit_lbl">이메일 수신여부</label>
-                            <div class="info_content email_agree">
-                                <input type="radio" name="email_agree" id="agree" value="수신">
-                                <label for="agree">수신</label>
-                                <input type="radio" name="email_agree" id=disagree value="수신거부">
-                                <label for="disagree">수신거부</label>
-                            </div>
-                        </li>
-
-                        <li>
-                            <label for="birthday" class="tit_lbl">생년월일</label>
-                            <div class="info_content">
-                                <input class="w160" type="text" id="years" placeholder="년">
-                                <select id="month" class="w160">
-                                    <option value="nochoice">월</option>
-                                    <option value="">1월</option>
-                                    <option value="">2월</option>
-                                    <option value="">3월</option>
-                                    <option value="">4월</option>
-                                    <option value="">5월</option>
-                                    <option value="">6월</option>
-                                    <option value="">7월</option>
-                                    <option value="">8월</option>
-                                    <option value="">9월</option>
-                                    <option value="">10월</option>
-                                    <option value="">11월</option>
-                                    <option value="">12월</option>
-                                </select>
-                                <input class="w160" type="text" id="day" placeholder="일">
-                            </div>
-                        </li>
-
-                        <div class="btn">
-                            <input type="submit" value="확인">
-                            <input type="reset" value="취소">
-                        </div>
-                    </ul>
-                </fieldset>
-            </form>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </section>
 
