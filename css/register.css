@@ -132,6 +132,11 @@
     background: #ddd;
 }
 
+.join_form .msg_agree label {
+    line-height: 40px;
+    padding-right: 15px;
+}
+
 .join_form .email_agree label {
     line-height: 40px;
     padding-right: 15px;

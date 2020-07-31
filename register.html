@@ -110,21 +110,31 @@
                         <li>
                             <label for="name_lbl" class="tit_lbl">이름</label>
                             <div class="info_content">
-                                <input required class="w320" type="text" id="name_lbl">
+                                <input class="w320" type="text" id="name_lbl">
                             </div>
                         </li>
+
+                        <li>
+                            <label for="id_lbl" class="tit_lbl">아이디</label>
+                            <div class="info_content">
+                                <input class="w320" type="text" id="id_lbl">
+                            </div>
+                        </li>
+
                         <li>
                             <label for="pw_lbl" class="tit_lbl">비밀번호</label>
                             <div class="info_content">
                                 <input class="w320" type="password" id="pw_lbl">
                             </div>
                         </li>
+
                         <li>
                             <label for="pwcheck_lbl" class="tit_lbl">비밀번호 확인</label>
                             <div class="info_content">
                                 <input class="w320" type="password" id="pwcheck_lbl">
                             </div>
                         </li>
+
                         <li>
                             <label for="phone_lbl" class="tit_lbl">연락처</label>
                             <div class="info_content">
@@ -133,6 +143,17 @@
                                 <input class="w120" type="text" id="phone_lbl">
                             </div>
                         </li>
+
+                        <li>
+                            <label class="tit_lbl">문자 수신여부</label>
+                            <div class="info_content msg_agree">
+                                <input type="radio" name="msg_agree" id="agree" value="수신">
+                                <label for="agree">수신</label>
+                                <input type="radio" name="msg_agree" id=disagree value="수신거부">
+                                <label for="disagree">수신거부</label>
+                            </div>
+                        </li>
+
                         <li>
                             <label for="email_lbl" class="tit_lbl">이메일</label>
                             <div class="info_content">
@@ -142,8 +163,9 @@
                                 <label class="email_box">
                                     <select id="email_choice" class="w160">
                                         <option value="nochoice">-이메일선택-</option>
-                                        <option value="naver.com">네이버</option>
-                                        <option value="daum.net">다음</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="google.co.kr">google.co.kr</option>
                                         <option value="self">직접입력</option>
                                     </select>
                                 </label>
@@ -182,6 +204,7 @@
                                 <input class="w160" type="text" id="day" placeholder="일">
                             </div>
                         </li>
+
                         <div class="btn">
                             <input type="submit" value="확인">
                             <input type="reset" value="취소">
