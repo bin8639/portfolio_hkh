@@ -1,6 +1,6 @@
 (function($){
     
-    $('#secBox').load('.main.html')
+    $('#secBox').load('main.html')
 
     $('.login > a').on('click', function (e) {
         e.preventDefault()
