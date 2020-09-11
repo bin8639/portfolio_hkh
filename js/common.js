@@ -10,7 +10,7 @@
         $('#secBox').load(url)
     })
 
-    // 탑메뉴 클릭시 대표 메뉴 바로 연결
+    // 탑메뉴 클릭시 대표 메뉴 연결
     $('.depth1 > li:nth-child(1) > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -32,7 +32,7 @@
         $('#secBox').load(url)
     })
 
-    // 서브페이지1-1 연결
+    // 인사말 페이지 연결
     $('.com_info > li:nth-child(1) > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -40,7 +40,7 @@
         $('#secBox').load(url)
     })
     
-    // 서브페이지1-2 연결
+    // 찾아오시는 길 연결
     $('.com_info > li:nth-child(2) > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -48,7 +48,7 @@
         $('#secBox').load(url)
     })
 
-    // 서브페이지2 연결
+    // 사업분야 연결
     $('.buss_info > li > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -56,7 +56,7 @@
         $('#secBox').load(url)
     })
 
-    // 서브페이지3 연결
+    // 제품소개1 연결
     $('.prod_info > li:nth-child(1) > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
