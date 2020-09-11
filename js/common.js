@@ -9,13 +9,11 @@
         $('#secBox').load(url)
     })
 
-    $('#secBox').load('subpage1_1.html')
-
     $('.nav > depth1 > li').on('click', function (e){
         e.preventDefault()
         var url = $(this).attr('href')
         $('#secContainer').remove()
-        $('#secBox').load(url)
+        $('#subpage1_1').load(url)
     })
 
 
