@@ -55,5 +55,13 @@
         $('#secBox').load(url)
     })
 
+    // 메인 메뉴 찾아 오시는 길 버튼 클릭 연결
+    $('.info_nav > li:nth-child(1) > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
 
 })(jQuery)
