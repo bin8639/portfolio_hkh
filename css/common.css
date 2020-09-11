@@ -183,3 +183,20 @@ html,
 .copyright .copy {
     padding-bottom: 20px;
 }
+
+.goTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999999999;
+}
+
+.goTop.on {
+    display: block;
+}
+
+.goTop img {
+    width: 70px;
+    cursor: pointer;
+}
