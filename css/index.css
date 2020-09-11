@@ -1,23 +1,13 @@
 @charset "utf-8";
 
-body,
-html,
-#wrap {
-    height: 100%;
-}
-
 /* 공통구역을 제외한 메인페이지 스타일 */
-#section {
+.section-outer {
     position: relative;
     padding-top: 120px;
 }
 
-.slide-outer {
-    position: relative;
-}
-
-.slide-inner {
-    width: 100%;
+/*슬라이드*/
+.slide-inner .slide {
     height: 686px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,28 +23,56 @@ html,
     background-image: url(../images/main_visual_2.jpg);
 }
 
-/* .slide-inner div:nth-child(2) {
-    display: none;
-} */
+/* 화살표  */ 
+.slide-outer {
+    position: relative;
+}
 
-.slide-outer .dotBox {
+.slide-outer .marrow {
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    cursor: pointer;
+}
+
+.slide-outer .prevArrow {
+    left: 10%;
+    z-index: 999;
+}
+
+.slide-outer .nextArrow {
+    right: 10%;
+}
+
+/* dotBox */
+.slide-outer .slick-dots {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
-.slide-outer .dotBox a {
+.slide-outer .slick-dots li {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    margin: 0 3px;
 }
 
-.slide-outer .dotBox a.active {
-    background: rgba(255, 255, 255, 1);
+.slide-outer .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    text-indent: -99999px;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.slide-outer .slick-dots li.slick-active button {
+    background: #fff;
+    width: 40px;
+    border-radius: 50px;
 }
 
 .section_box1 {
