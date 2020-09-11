@@ -20,11 +20,11 @@
     position: relative;
 }
 
-.slide-inner:first-child {
+.slide-inner .slide1 {
     background-image: url(../images/main_visual_1.jpg);
 }
 
-.slide-inner:nth-child(2) {
+.slide-inner .slide2 {
     background-image: url(../images/main_visual_2.jpg);
 }
 
