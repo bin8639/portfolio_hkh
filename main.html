@@ -1,12 +1,12 @@
 
 <div id="secContainer">
     <section id="section">
-        <div class="slideOuter">
-            <div class="slideInner">
-                <div class="slideBg">
+        <div class="slide-outer">
+            <div class="slide-inner">
+                <div class="slide slide1">
                     <div class="blind">배경화면1</div>
                 </div>
-                <div class="slideBg">
+                <div class="slide slide2">
                     <div class="blind">배경화면2</div>
                 </div>
             </div>
@@ -121,3 +121,31 @@
         </div>
     </section>
 </div>
+
+<script>
+    // 메인 슬라이드
+    $('.slideInner').slick({
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 4000,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        pauseOnDotsHover: false,
+        pauseOnFocus: false,
+        cssEase: 'ease',
+        draggable: true,
+        fade: false,
+        arrows: true,
+        prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+        responsive: [{
+            breakpoint: 801,
+            settings: {
+                arrows: false,
+                fade: true,
+            }
+        }]
+
+</script>

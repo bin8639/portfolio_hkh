@@ -7,11 +7,11 @@
     padding-top: 120px;
 }
 
-.slideOuter {
+.slide-outer {
     position: relative;
 }
 
-.slideInner {
+.slide-inner {
     width: 100%;
     height: 686px;
     background-size: cover;
@@ -20,26 +20,26 @@
     position: relative;
 }
 
-.slideInner:first-child {
+.slide-inner:first-child {
     background-image: url(../images/main_visual_1.jpg);
 }
 
-.slideInner:nth-child(2) {
+.slide-inner:nth-child(2) {
     background-image: url(../images/main_visual_2.jpg);
 }
 
-/* .slideInner div:nth-child(2) {
+/* .slide-inner div:nth-child(2) {
     display: none;
 } */
 
-.slideOuter .dotBox {
+.slide-outer .dotBox {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
-.slideOuter .dotBox a {
+.slide-outer .dotBox a {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -48,7 +48,7 @@
     margin: 0 3px;
 }
 
-.slideOuter .dotBox a.active {
+.slide-outer .dotBox a.active {
     background: rgba(255, 255, 255, 1);
 }
 
