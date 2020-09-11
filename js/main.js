@@ -47,5 +47,13 @@
         $('#secBox').load(url)
     })
 
+    //Product 버튼 클릭 연결
+    $('.product > .text > button > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
 
 })(jQuery)

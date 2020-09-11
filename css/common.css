@@ -139,7 +139,7 @@ html,
     background: #fff;
 }
 
-.logoNav:hover .decoBox {
+.logoNav.on .decoBox {
     display: block;
 }
 

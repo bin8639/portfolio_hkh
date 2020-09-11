@@ -67,13 +67,19 @@
     // 탑메뉴 호버시 슬라이드 효과
     $('.nav').hover(
         function(){
-            $(this).find('.depth2').stop().slideDown(500)
+            $(this).find('.depth2').stop().slideDown(400)
             $(this).find('.decoBox').stop().slideDown(400)
         },
         function(){
             $(this).find('.depth2').stop().slideUp(400)
-            $(this).find('.decoBox').stop().slideDown(500)
+            $(this).find('.decoBox').stop().slideDown(400)
         }
     )
+
+    $('.logoNav').hover( 
+        function(){ $(this).find('.decoBox').stop().slideDown(400) },
+        function(){ $(this).find('.decoBox').stop().slideUp(400) }
+        )
+        
 
 })(jQuery)
