@@ -9,12 +9,15 @@
         $('#secBox').load(url)
     })
 
-    $('.nav > depth1 > li').on('click', function (e){
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#secContainer').remove()
-        $('#subpage1_1').load(url)
-    })
-
+    $('.nav').hover(
+        function(){
+            $(this).find('.depth2').stop().slideDown(500)
+            $(this).find('.decoBox').stop().slideDown(400)
+        },
+        function(){
+            $(this).find('.depth2').stop().slideUp(400)
+            $(this).find('.decoBox').stop().slideDown(500)
+        }
+    )
 
 })(jQuery)
