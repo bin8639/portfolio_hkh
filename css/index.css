@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body,
+html,
+#wrap {
+    height: 100%;
+}
 
 /* 공통구역을 제외한 메인페이지 스타일 */
 #section {

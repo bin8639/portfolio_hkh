@@ -1,4 +1,3 @@
-
 <div id="secContainer">
     <section id="section">
         <div class="slide-outer">
@@ -19,7 +18,7 @@
                 </a>
             </div>
         </div>
-    
+
         <div class="section_box1">
             <ul class="mid_nav row">
                 <li>
@@ -48,7 +47,7 @@
                 </li>
             </ul>
         </div>
-    
+
         <div class="section_box2">
             <div class="product row">
                 <div class="box2_img"><img src="images/pro_img.jpg" alt=""></div>
@@ -63,7 +62,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="section_box3">
             <div class="info row">
                 <ul>
@@ -82,7 +81,7 @@
                 </ul>
             </div>
         </div>
-    
+
         <div class="section_box4">
             <div class="gallery row">
                 <ul>
@@ -107,7 +106,7 @@
                 </ul>
             </div>
         </div>
-    
+
         <div class="section_box5">
             <div class="overlay">
                 <div class="row">
@@ -123,29 +122,31 @@
 </div>
 
 <script>
-    // 메인 슬라이드
-    $('.slide-inner').slick({
-        autoplay: true,
-        dots: true,
-        autoplaySpeed: 4000,
-        speed: 600,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        pauseOnHover: true,
-        pauseOnDotsHover: false,
-        pauseOnFocus: false,
-        cssEase: 'ease',
-        draggable: true,
-        fade: false,
-        arrows: true,
-        prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
-        nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
-        responsive: [{
-            breakpoint: 801,
-            settings: {
-                arrows: false,
-                fade: true,
-            }
-        }]
-    })
+    (function ($) {
+        // 메인 슬라이드
+        $('.slide-inner').slick({
+            autoplay: true,
+            dots: true,
+            autoplaySpeed: 4000,
+            speed: 600,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            pauseOnHover: true,
+            pauseOnDotsHover: false,
+            pauseOnFocus: false,
+            cssEase: 'ease',
+            draggable: true,
+            fade: false,
+            arrows: true,
+            prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+            nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+            responsive: [{
+                breakpoint: 801,
+                settings: {
+                    arrows: false,
+                    fade: true,
+                }
+            }]
+        })
+    })(jQuery)
 </script>
