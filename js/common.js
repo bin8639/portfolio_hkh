@@ -1,8 +1,13 @@
 (function ($) {
-    //메인 페이지 연결
+    // 페이지 로딩 창
+    $(window).load(function(){
+        $('.loading').delay(1000).fadeOut(1000)
+    })
+
+    // 메인 페이지 연결
     $('#secBox').load('main.html')
 
-    //로그인 페이지 연결
+    // 로그인 페이지 연결
     $('.login > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -104,5 +109,6 @@
             scrollTop: 0
         }, 800 ,'linear');
     });
+
 
 })(jQuery)

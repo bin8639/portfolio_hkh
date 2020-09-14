@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 
-.product {
+.product_page {
     text-align: center;
     font-size: 12px;
     color: #666;
@@ -61,19 +61,19 @@
     border-bottom: 1px solid #ccc;
 }
 
-.product table {
+.product_page table {
     width: 100%;
 }
 
-.product table tr td {
+.product_page table tr td {
     padding-bottom: 25px;
 }
 
-.product table tr td > a > img {
+.product_page table tr td > a > img {
     width: 230px;
     height: 210px;
 }
 
-.product table tr td > a > p {
+.product_page table tr td > a > p {
     padding-top: 10px;
 }
