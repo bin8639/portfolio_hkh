@@ -73,20 +73,11 @@
     $('.nav').hover(
         function () {
             $(this).find('.depth2').stop().slideDown(400)
-            $(this).find('.decoBox').stop().slideDown(400)
+            $(this).next('.decoBox').stop().slideDown(400)
         },
         function () {
             $(this).find('.depth2').stop().slideUp(400)
-            $(this).find('.decoBox').stop().slideDown(400)
-        }
-    )
-
-    $('.logoNav').hover(
-        function () {
-            $(this).find('.decoBox').stop().slideDown(400)
-        },
-        function () {
-            $(this).find('.decoBox').stop().slideUp(400)
+            $(this).next('.decoBox').stop().slideUp(400)
         }
     )
 
