@@ -1,62 +1,61 @@
-
-    <div id="secContainer">
-        <section id="login_page">
-            <div class="login_imgbox">
-                <div>
-                    <div class="text">
-                        <h2>부가서비스</h2>
-                    </div>
+<div id="secContainer">
+    <section id="login_page">
+        <div class="login_imgbox">
+            <div>
+                <div class="text">
+                    <h2>부가서비스</h2>
                 </div>
             </div>
-            
-            <div class="login_nav">
-                <ul class="row">
-                    <li><a href="login.html" class="on">로그인</a></li>
-                    <li><a href="register.html">회원가입</a></li>
-                    <li><a href="privacy.html">개인정보처리방침</a></li>
-                    <li><a href="#">이메일무단수집거부</a></li>
-                </ul>
-            </div>
-    
-            <div class="login_form">
-                <div class="login_text row">
-                    <img src="images/title_login_page.gif" alt="">
-                    <p>관리자 로그인이 필요한 서비스입니다.</p>
-                    <form action="#" method="post" class="login_box">
-                        <fieldset>
-                            <legend>로그인</legend>
-                            <div class="login_content">
-                                <div class="idpw_box">
-                                    <label for="id_lb">아이디</label>
-                                    <input type="text" id="id_lb"><br>
-                                    <label for="pw_lb">비밀번호</label>
-                                    <input type="password" id="pw_lb">
-                                </div>
-                                <button type="submit">로그인</button>
+        </div>
+
+        <div class="login_nav">
+            <ul class="row">
+                <li><a href="login.html" class="on">로그인</a></li>
+                <li><a href="register.html">회원가입</a></li>
+                <li><a href="privacy.html">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+        </div>
+
+        <div class="login_form">
+            <div class="login_text row">
+                <img src="images/title_login_page.gif" alt="">
+                <p>관리자 로그인이 필요한 서비스입니다.</p>
+                <form action="#" method="post" class="login_box">
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <div class="login_content">
+                            <div class="idpw_box">
+                                <label for="id_lb">아이디</label>
+                                <input type="text" id="id_lb"><br>
+                                <label for="pw_lb">비밀번호</label>
+                                <input type="password" id="pw_lb">
                             </div>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="find_idpw row">
-                    <p>
-                        아이디를 잊으셨나요?
-                        <button type="submit">아이디찾기</button>
-                    </p>
-                    <p>
-                        비밀번호를 잊으셨나요?
-                        <button type="submit">비밀번호 찾기</button>
-                    </p>
-                </div>
+                            <button type="submit">로그인</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-    
-        </section>
-    </div>
+            <div class="find_idpw row">
+                <p>
+                    아이디를 잊으셨나요?
+                    <button type="submit">아이디찾기</button>
+                </p>
+                <p>
+                    비밀번호를 잊으셨나요?
+                    <button type="submit">비밀번호 찾기</button>
+                </p>
+            </div>
+        </div>
 
-    <script>
-        $('.login_nav a').on('click', function(e){
-            e.preventDefault()
-            var url = $(this).attr('href')
-            $('#secContainer').remove()
-            $('#secBox').load(url)
-        })
-    </script>
+    </section>
+</div>
+
+<script>
+    $('.login_nav a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+</script>
