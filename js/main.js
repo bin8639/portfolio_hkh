@@ -62,7 +62,7 @@
         $('#secContainer').remove()
         $('#secBox').load(url)
     })
-
+    
     // section_box1 mid_nav 아이콘 부분 애니메이션
     $(window).scroll(function(){
         var sct = $(this).scrollTop()

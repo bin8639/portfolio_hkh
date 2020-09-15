@@ -39,16 +39,14 @@
     padding: 45px 35px;
 }
 
-.subpage3_nav ul li:first-child {
-    font-size: 30px;
-    color: #333;
+.subpage3_nav ul > li a {
+    color: #888;
     font-weight: bold;
 }
 
-.subpage3_nav ul li:nth-child(2),
-.subpage3_nav ul li:nth-child(3),
-.subpage3_nav ul li:nth-child(4) {
-    color: #888;
+.subpage3_nav ul li a.on {
+    font-size: 30px;
+    color: #333;
     font-weight: bold;
 }
 

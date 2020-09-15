@@ -12,7 +12,7 @@
             <div class="subpage1_nav">
                 <ul class="row">
                     <li><a href="subpage1_1.html">인사말</a></li>
-                    <li><a href="subpage1_2.html">오시는 길</a></li>
+                    <li><a href="subpage1_2.html" class="on">오시는 길</a></li>
                 </ul>
             </div>
     
@@ -52,3 +52,12 @@
             </div>
         </section>
     </div>
+
+    <script>
+        $('.subpage1_nav a').on('click', function(e){
+             e.preventDefault()
+             var url = $(this).attr('href')
+             $('#secContainer').remove()
+             $('#secBox').load(url)
+         })
+    </script>

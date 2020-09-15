@@ -37,16 +37,14 @@
     padding: 45px 35px;
 }
 
-.login_nav ul li:nth-child(1) {
-    font-size: 30px;
-    color: #333;
+.login_nav ul > li a {
+    color: #888;
     font-weight: bold;
 }
 
-.login_nav ul > li:nth-child(2),
-.login_nav ul > li:nth-child(3),
-.login_nav ul > li:nth-child(4) {
-    color: #888;
+.login_nav ul li a.on {
+    font-size: 30px;
+    color: #333;
     font-weight: bold;
 }
 

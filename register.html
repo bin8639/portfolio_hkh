@@ -12,7 +12,7 @@
             <div class="login_nav">
                 <ul class="row">
                     <li><a href="login.html">로그인</a></li>
-                    <li><a href="register.html">회원가입</a></li>
+                    <li><a href="register.html" class="on">회원가입</a></li>
                     <li><a href="privacy.html">개인정보처리방침</a></li>
                     <li><a href="#">이메일무단수집거부</a></li>
                 </ul>
@@ -138,3 +138,12 @@
             </div>
         </section>
 </div>
+
+<script>
+    $('.login_nav a').on('click', function(e){
+            e.preventDefault()
+            var url = $(this).attr('href')
+            $('#secContainer').remove()
+            $('#secBox').load(url)
+        })
+</script>
