@@ -19,21 +19,35 @@
     $('.depth1 > li:nth-child(1) > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
-        $('secContainer').remove()
+        $('#secContainer').remove()
         $('#secBox').load(url)
     })
 
     $('.depth1 > li:nth-child(2) > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
-        $('secContainer').remove()
+        $('#secContainer').remove()
         $('#secBox').load(url)
     })
 
     $('.depth1 > li:nth-child(3) > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
-        $('secContainer').remove()
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
+    $('.depth1 > li:nth-child(4) > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+    
+    $('.depth1 > li:nth-child(5) > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
         $('#secBox').load(url)
     })
 
