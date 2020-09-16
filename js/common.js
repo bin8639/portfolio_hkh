@@ -69,6 +69,14 @@
         $('#secBox').load(url)
     })
 
+    // 공지사항 연결
+    $('.cs_info > li:nth-child(1) > a').on('click', function(e){
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
     // 탑메뉴 호버시 슬라이드 효과
     $('.nav').hover(
         function () {
