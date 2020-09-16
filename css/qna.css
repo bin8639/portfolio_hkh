@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-#notice {
+#qna {
     padding-top: 120px;
     position: relative;
 }
 
-.noticeImg {
-    background-image: url(../images/sub_img5.jpg);
+.qnaImg {
+    background-image: url(../images/sub_img4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.noticeImg .text {
+.qnaImg .text {
     font-size: 42px;
     color: #fff;
     text-align: center;
@@ -26,127 +26,115 @@
     text-shadow: 1px 1px 2px #333;
 }
 
-.noticeNav {
+.qnaNav {
     width: 100%;
     height: 120px;
     text-align: center;
 }
 
-.noticeNav li {
+.qnaNav li {
     display: inline-block;
     padding: 45px 35px;
 }
 
-.noticeNav li a {
+.qnaNav li a {
     color: #888;
     font-weight: bold;
 }
 
-.noticeNav li a.on {
+.qnaNav li a.on {
     font-size: 30px;
     color: #333;
     font-weight: bold;
 }
 
-.noticeTable {
+.qnaTable {
     margin-top: 20px;
 }
 
-.noticeTable col:nth-child(1) {
+.qnaTable col:nth-child(1) {
     width: 5%;
 }
 
-.noticeTable col:nth-child(2) {
+.qnaTable col:nth-child(2) {
     width: auto;
 }
 
-.noticeTable col:nth-child(3) {
+.qnaTable col:nth-child(3) {
     width: 13%;
 }
 
-.noticeTable col:nth-child(4) {
+.qnaTable col:nth-child(4) {
     width: 13%;
 }
 
-.noticeTable col:nth-child(5) {
+.qnaTable col:nth-child(5) {
     width: 5%;
 }
 
-.noticeTable table {
+.qnaTable table {
     border: none;
     font-size: 14px;
 }
 
-.noticeTable th,
-.noticeTable td {
+.qnaTable th,
+.qnaTable td {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px 5px;
 }
 
-.noticeTable tbody td:nth-child(1),
-.noticeTable tbody td:nth-child(3),
-.noticeTable tbody td:nth-child(4),
-.noticeTable tbody td:nth-child(5) {
+.qnaTable tbody td:nth-child(1),
+.qnaTable tbody td:nth-child(3),
+.qnaTable tbody td:nth-child(4),
+.qnaTable tbody td:nth-child(5) {
     text-align: center
 }
 
-.noticeTable th {
+.qnaTable th {
     background: #f2f2f2;
     border-top: 1px solid #999;
 }
 
-.noticeTable tbody tr:hover {
+.qnaTable tbody tr:hover {
     background: #f2f2f2;
     transition: all 0.5s;
 }
 
-.searchBox {
+.writeBox {
     text-align: right;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
-.searchBox select {
-    height: 30px;
-}
-
-.searchBox input[type=text] {
-    height: 30px;
-    width: 200px;
-    text-indent: 1em;
-    border: 1px solid #333;
-}
-
-.searchBox input[type=submit] {
+.writeBox input[type=submit] {
     height: 30px;
     background: #ddd;
     padding: 0 8px;
     border-radius: 5px;
-    vertical-align: middle;
 }
 
-.noticePage .numlist {
+.qnaPage .numlist {
     text-align: center;
     margin: 30px 0px;
     font-size: 16px
 }
 
-.noticePage .numlist span {
+.qnaPage .numlist span {
     padding: 5px 8px;
     display: inline-block;
 }
 
-.noticePage .numlist a {
+.qnaPage .numlist a {
     display: inline-block;
     padding: 5px 8px;
     border: 1px solid #ddd;
     transition: all 0.5s;
 }
 
-.noticePage .numlist a.on {
+.qnaPage .numlist a.on {
     background: #ddd;
 }
 
-.noticePage .numlist a:hover {
+.qnaPage .numlist a:hover {
     background: #ddd;
 }
