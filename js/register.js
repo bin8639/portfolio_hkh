@@ -30,7 +30,7 @@
                 return false
             }
         } else {
-            alert('아이디는 8~12글자 내에서만 가능합니다.')
+            alert('아이디는 7~12글자 내에서만 가능합니다.')
             $('#id_lbl').focus()
             $('#id_lbl').select()
             return false
