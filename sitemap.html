@@ -19,8 +19,8 @@
                             <ul class="depth1 cf">
                                 <li>
                                     <ul class="depth2">
-                                        <li><a href="#">인사말</a></li>
-                                        <li><a href="#">찾아오시는 길</a></li>
+                                        <li><a href="subpage1_1.html">인사말</a></li>
+                                        <li><a href="subpage1_2.html">찾아오시는 길</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -32,7 +32,7 @@
                             <ul class="depth1 cf">
                                 <li>
                                     <ul class="depth2">
-                                        <li><a href="#">사업분야</a></li>
+                                        <li><a href="subpage2.html">사업분야</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -44,7 +44,7 @@
                             <ul class="depth1 cf">
                                 <li>
                                     <ul class="depth2">
-                                        <li><a href="#">제품소개1</a></li>
+                                        <li><a href="subpage3_1.html">제품소개1</a></li>
                                         <li><a href="#">제품소개2</a></li>
                                         <li><a href="#">제품소개3</a></li>
                                     </ul>
@@ -58,7 +58,7 @@
                             <ul class="depth1 cf">
                                 <li>
                                     <ul class="depth2">
-                                        <li><a href="#">Q&amp;A</a></li>
+                                        <li><a href="qna.html">Q&amp;A</a></li>
                                         <li><a href="#">1:1 문의</a></li>
                                     </ul>
                                 </li>
@@ -71,7 +71,7 @@
                             <ul class="depth1 cf">
                                 <li>
                                     <ul class="depth2">
-                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="notice.html">공지사항</a></li>
                                         <li><a href="#">자주하는 질문</a></li>
                                         <li><a href="#">갤러리</a></li>
                                     </ul>
@@ -85,6 +85,14 @@
         </div>
     </section>
 
-
-
 </div>
+
+<script>
+    // 링크연결
+    $('.site_cont a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+</script>
