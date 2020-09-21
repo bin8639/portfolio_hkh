@@ -3,6 +3,7 @@
 #notice {
     padding-top: 120px;
     position: relative;
+    border-bottom: 1px solid #ccc;
 }
 
 .noticeImg {
