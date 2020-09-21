@@ -30,37 +30,36 @@
     border-bottom: 1px solid #ccc;
 }
 
-.sitemap_box h2 {
-    text-align: center;
-    font-size: 30px;
-    margin: 50px 0px 100px;
-    color: #333;
+.sitemap_box {
+    height: 600px;
 }
 
 .site_cont .site_tit {
-    float: left;
-    width: 200px;
-    font-size: 24px;
-    line-height: 20px;
+    text-align: center;
+    font-size: 30px;
     font-weight: bold;
+    margin: 50px 0px 100px;
     color: #999;
 }
 
-.site_cont .site_list {
-    float: left;
-    width: calc(100% - 200px);
+
+.site_cont .site_list .depth1 span {
+    font-size: 20px;
+    color: #525252;
+    font-weight: bold;
+    border-bottom: 1px solid #525252;
 }
 
 .site_cont .site_list .depth1 > li {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 180px;
     font-size: 18px;
     color: #525252;
 }
 
 .site_cont .site_list .depth1 .depth2 > li {
-    padding-bottom: 10px;
+    padding: 15px 0;
     transition: all 0.5s;
 }
 
