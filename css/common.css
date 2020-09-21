@@ -199,6 +199,7 @@ html,
 .goTop img {
     width: 70px;
     cursor: pointer;
+    animation: flash 2s alternate infinite;
 }
 
 .loading {
