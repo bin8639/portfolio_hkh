@@ -1,0 +1,234 @@
+#csCenter {
+    padding-top: 120px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.qnaImg {
+    background-image: url(../images/sub_img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    position: relative;
+}
+
+.qnaImg .text {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px #333;
+}
+
+.qnaNav {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.qnaNav li {
+    display: inline-block;
+    padding: 45px 35px;
+}
+
+.qnaNav li a {
+    color: #888;
+    font-weight: bold;
+}
+
+.qnaNav li a.on {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+#csCenter .csBox {
+    padding: 20px 30px 100px;
+}
+
+#csCenter .cs_list li {
+    border-bottom: 1px solid #efefef;
+}
+
+#csCenter .cs_list li:first-child {
+    border-top: 2px solid #000;
+}
+
+#csCenter .cs_list li .label_box {
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    vertical-align: top;
+    width: 20%;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+#csCenter .cs_list li .tit_lbl {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#csCenter .cs_list li .input_box {
+    display: inline-block;
+    height: 52px;
+    vertical-align: top;
+    padding: 9px 6px 9px;
+}
+
+#csCenter .cs_list li span {
+    display: inline-block;
+    line-height: 52px;
+}
+
+#csCenter .cs_list li .input_box select,
+#csCenter .cs_list li .input_box input[type="text"] {
+    height: 100%;
+    vertical-align: top;
+    padding: 0 1em;
+    border: 1px solid #ccc;
+}
+
+#csCenter .cs_list li .input_box select {
+    font-size: 0.9rem;
+    padding: 0 0.5em;
+}
+
+#csCenter .cs_list li .cont_lbl_box {
+    height: 238px;
+    line-height: 238px;
+}
+
+#csCenter .cs_list li .cont_box {
+    width: 79.5%;
+    height: 238px;
+    position: relative;
+}
+
+#csCenter .cs_list li .cont_box textarea {
+    width: 750px;
+    height: 220px;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 1em;
+}
+
+#csCenter .cs_list li .cont_box p {
+    position: absolute;
+    bottom: 6px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: #777;
+}
+
+#csCenter .cs_list li .cont_box p span {
+    line-height: 1;
+}
+
+#csCenter ::placeholder {
+    font-size: 1rem;
+    color: #b1b1b1;
+}
+
+#csCenter .cs_list li .file_box {
+    padding: 15px 0 0 6px;
+}
+
+#csCenter .cs_list li .input_box input[type="file"] {
+    height: 100%;
+    vertical-align: top;
+    width: 178px;
+}
+
+#csCenter .cs_list li .agree_box {
+    position: relative;
+    padding: 40px 15px 18px;
+}
+
+#csCenter .cs_list li .agree_box>label {
+    line-height: 1rem;
+    vertical-align: top;
+}
+
+#csCenter .cs_list li .agree_checkbox {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    line-height: 13px;
+    padding: 2px 15px 0 0;
+}
+
+#csCenter .cs_list li .agree_checkbox input {
+    display: none;
+}
+
+#csCenter .cs_list li .agree_checkbox label {
+    font-size: 0.9rem;
+    vertical-align: top;
+    position: relative;
+}
+
+#csCenter .cs_list li .agree_checkbox label:before {
+    content: '\f14a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    color: #ccc;
+    margin-right: 8px;
+    display: inline-block;
+    transform: scale(1.2) translateY(-1px);
+}
+
+#csCenter .cs_list li .agree_checkbox input[type="checkbox"]:checked+label:before {
+    content: '\f14a';
+    color: #a19cff;
+    font-weight: 900;
+}
+
+#csCenter .cs_list li .agree_textbox textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #8f8f8f;
+    padding: 1em;
+    color: #333;
+    resize: none;
+    margin-top: 5px;
+}
+
+#csCenter .cs_form .btn {
+    text-align: center;
+    padding-top: 17px;
+}
+
+#csCenter .cs_form .btn button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    background: #a1a1a1;
+}
+
+#csCenter .cs_form .btn button[type="submit"] {
+    background: #a19cff;
+}
+
+#csCenter .w80 {
+    width: 80px;
+}
+
+#csCenter .w150 {
+    width: 150px;
+}
+
+#csCenter .w500 {
+    width: 500px;
+}
+
+#csCenter .w750 {
+    width: 750px;
+}

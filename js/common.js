@@ -91,6 +91,14 @@
         $('#secBox').load(url)
     })
 
+    // 1:1 문의 연결
+    $('.qna_info > li:nth-child(2) > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
     // 공지사항 연결
     $('.cs_info > li:nth-child(1) > a').on('click', function (e) {
         e.preventDefault()
