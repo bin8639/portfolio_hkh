@@ -37,10 +37,11 @@
 </div>
 
 <script>
-    $('.subpage1_nav a').on('click', function (e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#secContainer').remove()
-        $('#secBox').load(url)
-    })
+        $('.subpage1_nav a').on('click', function (e) {
+            e.preventDefault()
+            var url = $(this).attr('href')
+            $('#secContainer').remove()
+            $('#secBox').load(url)
+        })
+
 </script>

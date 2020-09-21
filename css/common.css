@@ -24,36 +24,32 @@ html,
     position: relative;
 }
 
-.topmenu .row {
-    position: relative;
-}
-
 .topmenu {
-   background: #f5f5f5;
-   color: #888;
-   font-size: 12px;
-   padding-top: 6px;
-   padding-right: 8px;
-   height: 30px;
-   width: 100%;
-   text-align: right;    
+    background: #f5f5f5;
+    color: #888;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-right: 8px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
 }
 
-.topmenu .login > a {
+.topmenu .login>a {
     padding: 0px 3px;
 }
 
-.topmenu .login > a:before {
+.topmenu .login>a:before {
     content: ':';
     padding-right: 10px;
     font-size: 6px;
 }
 
-.topmenu .login > a:first-child::before {
+.topmenu .login>a:first-child::before {
     display: none;
 }
 
-.topmenu .login > a:hover {
+.topmenu .login>a:hover {
     color: #000;
 }
 
@@ -65,10 +61,10 @@ html,
 .logoNav .nav {
     position: absolute;
     top: 30px;
-    left: 36%;
+    left: 40%;
 }
 
-.logoNav .nav .depth1 > li {
+.logoNav .nav .depth1>li {
     display: inline-block;
     position: relative;
     padding: 32px 0 28px;
@@ -77,7 +73,7 @@ html,
     text-align: center;
 }
 
-.logoNav .nav .depth1 > li > a {
+.logoNav .nav .depth1>li>a {
     position: relative;
     font-size: 17px;
     color: #333;
@@ -87,7 +83,7 @@ html,
     display: inline-block;
 }
 
-.logoNav .nav .depth1 > li:hover > a {
+.logoNav .nav .depth1>li:hover>a {
     border-bottom: 2px solid #000;
 }
 
@@ -108,24 +104,20 @@ html,
     background: #f5f5f5;
 }
 
-/* .logoNav .nav:hover .depth2 {
-    display: block;
-} */
-
 .logoNav .nav .depth1>li:hover .depth2 {
     display: block;
     background: #f5f5f5;
 }
 
-.logoNav .nav .depth1:hover .depth2 > li > a:hover {
+.logoNav .nav .depth1:hover .depth2>li>a:hover {
     color: #f00;
 }
 
-.logoNav .nav .depth2 > li {
+.logoNav .nav .depth2>li {
     margin-top: 10px;
 }
 
-.nav .depth2 > a{
+.nav .depth2>a {
     display: block;
 }
 
@@ -153,11 +145,11 @@ html,
     padding: 50px 0;
 }
 
-.sns > a {
+.sns>a {
     padding-right: 5px;
 }
 
-.information{
+.information {
     font-size: 12px;
 }
 
@@ -197,7 +189,7 @@ html,
 }
 
 .goTop img {
-    width: 70px;
+    width: 60px;
     cursor: pointer;
     animation: flash 2s alternate infinite;
 }
