@@ -98,11 +98,6 @@
     padding-top: 15px;
 }
 
-.section_box1 .mid_nav > li > a:hover img {
-    transform: translateY(-12px);
-    transition: all 0.4s;
-}
-
 .section_box1 .mid_nav {
     overflow: hidden;
 }
