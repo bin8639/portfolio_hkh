@@ -71,7 +71,7 @@
     })
 
     // mid_nav hover 이벤트
-    $('.mid_nav > li > a').mouseover(function () {
+    $('.mid_nav > li > a > img').mouseover(function () {
         $(this).css({
             transform: 'translateY(-14px)',
             transition: 'all 0.5s'
