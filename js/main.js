@@ -70,6 +70,14 @@
         $('#secBox').load(url)
     })
 
+    // 메인 자주하는 질문 버튼 클릭 연결
+    $('.info_nav > li:nth-child(2) > a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
     // mid_nav hover 이벤트
     $('.mid_nav > li > a > img').mouseover(function () {
         $(this).css({
