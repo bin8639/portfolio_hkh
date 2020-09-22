@@ -107,6 +107,14 @@
         $('#secBox').load(url)
     })
 
+    // 자주하는 질문 연결
+    $('.cs_info > li:nth-child(2) > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
     // footer 링크연결
     $('.information > a:nth-child(1)').on('click', function (e) {
         e.preventDefault()

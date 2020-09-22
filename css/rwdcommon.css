@@ -16,7 +16,7 @@
     }
 
 
-    #header .logoNav .open-gnb {
+    #header .open-gnb {
         display: block;
         position: absolute;
         top: 50%;
@@ -27,7 +27,7 @@
         z-index: 9999999;
     }
 
-    #header .logoNav .open-gnb span {
+    #header.open-gnb span {
         display: block;
         width: 25px;
         height: 3px;
@@ -36,17 +36,17 @@
         transform: all 0.5s;
     }
 
-    #header.on .logoNav .open-gnb span:nth-of-type(2) {
+    #header.on .open-gnb span:nth-of-type(2) {
         display: none
     }
 
-    #header.on .logoNav .open-gnb span:nth-of-type(1) {
+    #header.on .open-gnb span:nth-of-type(1) {
         transform: rotate(45deg);
         position: absolute;
         left: 0px;
     }
 
-    #header.on .logoNav .open-gnb span:nth-of-type(3) {
+    #header.on .open-gnb span:nth-of-type(3) {
         transform: rotate(-45deg);
         position: absolute;
         top: -4px;

@@ -1,0 +1,76 @@
+<div class="secContainer">
+    <section id="question_page">
+
+        <section id="notice">
+            <div class="noticeImg">
+                <div>
+                    <div class="text">
+                        <h2>고객센터</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="noticePage">
+                <div class="noticeBox row">
+                    <ul class="noticeNav">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="question.html" class="on">자주하는 질문</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                    <div class="qtnTable">
+                        <table>
+                            <caption>자주하는 질문</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="#">자주하는 질문입니다.</a></td>
+                                    <td>운영자</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#">자주하는 질문입니다.</a></td>
+                                    <td>운영자</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#">자주하는 질문입니다..</a></td>
+                                    <td>운영자</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#">자주하는 질문입니다.</a></td>
+                                    <td>운영자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#">자주하는 질문입니다.</a></td>
+                                    <td>운영자</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+<script>
+    $('.noticeNav a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+</script>
