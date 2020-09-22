@@ -56,13 +56,13 @@
     border-bottom: 1px solid #ccc;
 }
 
-.privacy_text  h3 {
-    font-size: 16px;
+.privacy_text .p_text > h3 {
+    font-size: 20px;
     color: #333;
     padding-bottom: 5px;
 }
 
-.privacy_text  p {
+.privacy_text .p_text > p {
     font-size: 13px;  
     padding-bottom: 25px;
     line-height: 2em;

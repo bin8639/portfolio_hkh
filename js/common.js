@@ -107,6 +107,21 @@
         $('#secBox').load(url)
     })
 
+    // footer 링크연결
+    $('.information > a:nth-child(1)').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
+    $('.information > a:nth-child(3)').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
     // 탑메뉴 호버시 슬라이드 효과
     $('.nav').hover(
         function () {
