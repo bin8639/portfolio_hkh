@@ -253,6 +253,11 @@
     width: 33.3333%;
 }
 
+.section_box4 .gallery > ul > li > a > img:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
 .section_box4 .gallery > ul > li > a > p {
     padding-top: 15px;
     font-size: 14px;
