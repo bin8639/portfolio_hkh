@@ -70,30 +70,6 @@
         $('#secBox').load(url)
     })
 
-    // section_box1 mid_nav 아이콘 부분 애니메이션
-    $(window).scroll(function () {
-        var sct = $(this).scrollTop()
-        var midNavNear = $('.section_box1').offset().top - $(this).height()
-        if (sct >= midNavNear) {
-            $('.section_box1').addClass('on')
-        }
-        // section_box2 product 부분
-        var pdtNear = $('.section_box2').offset().top - $(this).height() / 2
-        if (sct >= pdtNear) {
-            $('.section_box2').addClass('on')
-        }
-        // section_box3 info 부분 
-        var infoNear = $('.section_box3').offset().top - $(this).height() / 2
-        if (sct >= infoNear) {
-            $('.section_box3').addClass('on')
-        }
-        // section_box4 gallery 부분
-        var gallNear = $('.section_box4').offset().top - $(this).height() / 2
-        if (sct >= gallNear) {
-            $('.section_box4').addClass('on')
-        }
-    })
-
     // mid_nav hover 이벤트
     $('.mid_nav > li > a').mouseover(function () {
         $(this).css({
