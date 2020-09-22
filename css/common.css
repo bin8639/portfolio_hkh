@@ -100,16 +100,15 @@ html,
     z-index: 9999;
 }
 
-.logoNav .nav:hover .depth1>li:hover {
+.logoNav .nav .depth1>li:hover {
     background: #f5f5f5;
 }
 
 .logoNav .nav .depth1>li:hover .depth2 {
-    display: block;
     background: #f5f5f5;
 }
 
-.logoNav .nav .depth1:hover .depth2>li>a:hover {
+.logoNav .nav .depth1 .depth2>li>a:hover {
     color: #f00;
 }
 
