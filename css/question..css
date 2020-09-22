@@ -55,7 +55,7 @@
 }
 
 .qtnTable col:nth-child(1) {
-    width: 5%;
+    width: 8%;
 }
 
 .qtnTable col:nth-child(2) {
@@ -63,7 +63,7 @@
 }
 
 .qtnTable col:nth-child(3) {
-    width: 13%;
+    width: 16%;
 }
 
 .qtnTable table {
