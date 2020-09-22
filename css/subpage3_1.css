@@ -72,6 +72,11 @@
     height: 210px;
 }
 
+.product_page table tr td > a > img:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
 .product_page table tr td > a > p {
     padding-top: 10px;
 }
