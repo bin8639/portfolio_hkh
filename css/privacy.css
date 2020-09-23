@@ -52,14 +52,17 @@
 
 .privacy_text { 
     padding-top: 25px;
-    height: 900px;
+    height: 600px;
     border-bottom: 1px solid #ccc;
 }
 
 .privacy_text .p_text > h3 {
     font-size: 20px;
     color: #333;
-    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
 .privacy_text .p_text > p {
