@@ -170,7 +170,7 @@
     function init() {
         winWidth = $(window).innerWidth()
         winHeight = $(window).height()
-        if (winWidth > 894 && !$('html').hasClass('pc')) {
+        if (winWidth > 800 && !$('html').hasClass('pc')) {
             $('#header').removeClass('on')
             $('.outlayer').removeClass('on')
             $('.nav').css({
@@ -178,7 +178,7 @@
                 right: '0px'
             })
             $('html').addClass('pc').removeClass('mobile')
-        } else if (winWidth < 894 && !$('html').hasClass('mobile')) {
+        } else if (winWidth < 800 && !$('html').hasClass('mobile')) {
             $('#header').removeClass('on')
             $('.nav').css({
                 display: 'none',
