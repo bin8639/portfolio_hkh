@@ -142,6 +142,63 @@
         }
     )
 
+    // 반응형 nav 박스
+    function openNav() {
+        $('#header').toggleClass('on')
+        if ($('#header').hasClass('on')) {
+            $('.nav').css({
+                display: 'block'
+            }).stop().animate({
+                right: '0px'
+            }, 500)
+        } else {
+            $('.nav').stop().animate({
+                right: '-320px'
+            }, 500, function () {
+                $(this).css({
+                    display: 'none'
+                })
+            })
+        }
+        $('.outlayer').toggleClass('on')
+    }
+    $('.open-gnb').on('click', openNav)
+    $('.outlayer').on('click', openNav)
+
+    var winWidth, winHeight;
+
+    function init() {
+        winWidth = $(window).innerWidth()
+        winHeight = $(window).height()
+        if (winWidth > 894 && !$('html').hasClass('pc')) {
+            $('#header').removeClass('on')
+            $('.outlayer').removeClass('on')
+            $('.nav').css({
+                display: 'block',
+                right: '0px'
+            })
+            $('html').addClass('pc').removeClass('mobile')
+        } else if (winWidth < 894 && !$('html').hasClass('mobile')) {
+            $('#header').removeClass('on')
+            $('.nav').css({
+                display: 'none',
+                right: '-320px'
+            })
+            $('html').addClass('mobile').removeClass('pc')
+        }
+    }
+
+    init()
+
+
+
+    $(window).resize(function () {
+        init()
+    })
+
+
+    
+
     var sct = 0;
     var winHeight = $(window).height();
 

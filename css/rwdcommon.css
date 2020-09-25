@@ -1,39 +1,67 @@
-@media only screen and (max-width:1260px) {
+@charset "utf-8";
+
+@media only screen and (max-width:1304px) {
     .row {
         width: 100%;
         padding-right: 10px;
         padding-left: 10px;
     }
 
-    #header {
-        position: relative;
-        height: 90px;
-        transition: all 0.5s;
+    /* 로고 네비 구역 */
+    #header .logoNav .nav {
+        position: absolute;
+        top: 30px;
+        left: 30%;
     }
 
-    #header.on {
-        overflow: visible;
-    }
+}
 
+@media only screen and (max-width:1120px) {
+
+    /* 로고 네비 구역 */
+    #header .logoNav .nav {
+        position: absolute;
+        top: 30px;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width:983px) {
+
+    /* 로고 네비 구역 */
+    #header .logoNav .nav {
+        position: absolute;
+        top: 30px;
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width:894px) {
+
+    /* 로고 네비 구역 */
+    #header .topmenu .login {
+        display: none;
+    }
 
     #header .open-gnb {
         display: block;
         position: absolute;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         right: 15px;
-        width: 25px;
-        height: 17px;
+        width: 30px;
+        height: 25px;
         z-index: 9999999;
     }
 
-    #header.open-gnb span {
+    #header .open-gnb span {
         display: block;
-        width: 25px;
-        height: 3px;
+        width: 30px;
+        height: 4px;
         margin-bottom: 4px;
         border-radius: 10px;
-        transform: all 0.5s;
+        transition: all 0.5s;
+        background: #000;
     }
 
     #header.on .open-gnb span:nth-of-type(2) {
@@ -43,13 +71,43 @@
     #header.on .open-gnb span:nth-of-type(1) {
         transform: rotate(45deg);
         position: absolute;
+        top: 10px;
         left: 0px;
     }
 
     #header.on .open-gnb span:nth-of-type(3) {
         transform: rotate(-45deg);
         position: absolute;
-        top: -4px;
+        top: 10px;
         left: 0px;
     }
+
+    #header .logoNav .nav {
+        display: none;
+        background: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        height: 100%;
+        top: 120px;
+        right: -320px;
+        text-align: center;
+        transform: translateY(0%);
+        padding-top: 40px;
+    }
+
+    #header.on .nav {
+        display: block;
+        transition: all 0.5s;
+    }
+
+    #header .nav .depth1>li {
+        display: block;
+    }
+
+    #header .nav .depth1>li>a {
+        font-size: 18px;
+        color: #bda736;
+        padding: 10px 20px;
+        display: block;
+    }
+
 }
