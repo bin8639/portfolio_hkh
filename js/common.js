@@ -4,11 +4,6 @@
         $('.loading').delay(1000).fadeOut(1000)
     })
 
-  
-    $(window).on('resize', function(){
-      init()
-    })
-
     // 메인 페이지 연결
     $('#secBox').load('main.html')
 
@@ -186,6 +181,14 @@
           })
       }
   }
+
+  init()
+
+
+
+  $(window).resize(function () {
+      init()
+  })
 
 
     var sct = 0;
