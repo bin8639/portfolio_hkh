@@ -4,6 +4,11 @@
         $('.loading').delay(1000).fadeOut(1000)
     })
 
+  
+    $(window).on('resize', function(){
+      init()
+    })
+
     // 메인 페이지 연결
     $('#secBox').load('main.html')
 
@@ -142,62 +147,46 @@
         }
     )
 
-    // 반응형 nav 박스
-    function openNav() {
-        $('#header').toggleClass('on')
-        if ($('#header').hasClass('on')) {
-            $('.nav').css({
-                display: 'block'
-            }).stop().animate({
-                right: '0px'
-            }, 500)
-        } else {
-            $('.nav').stop().animate({
-                right: '-320px'
-            }, 500, function () {
-                $(this).css({
-                    display: 'none'
-                })
-            })
-        }
-        $('.outlayer').toggleClass('on')
-    }
-    $('.open-gnb').on('click', openNav)
-    $('.outlayer').on('click', openNav)
-
-    var winWidth, winHeight;
-
-    function init() {
-        winWidth = $(window).innerWidth()
-        winHeight = $(window).height()
-        if (winWidth > 800 && !$('html').hasClass('pc')) {
-            $('#header').removeClass('on')
-            $('.outlayer').removeClass('on')
-            $('.nav').css({
-                display: 'block',
-                right: '0px'
-            })
-            $('html').addClass('pc').removeClass('mobile')
-        } else if (winWidth < 800 && !$('html').hasClass('mobile')) {
-            $('#header').removeClass('on')
-            $('.nav').css({
-                display: 'none',
-                right: '-320px'
-            })
-            $('html').addClass('mobile').removeClass('pc')
-        }
-    }
-
-    init()
-
-
-
-    $(window).resize(function () {
-        init()
+   // 햄버거버튼 클릭시 네비박스 나타나기
+   $('.logoNav .open_nav').on('click', function () {
+    $(this).next().stop().slideDown(400)
+    $(this).hide()
+    $(this).nextAll('.close_nav').css({
+      display: 'block'
     })
+  })
+ 
+  // 닫기버튼 클릭시 네비박스 사라지기
+  $('.logoNav .close_nav').on('click', function(){
+    $(this).prev().stop().slideUp(400)
+    $(this).hide()
+    $(this).prevAll('.open_nav').css({
+      display: 'block'
+    })
+    $('.depth2').hide()
+  })
 
+  // 리사이즈
+  var winWidth, winHeight;
+  init()
 
-    
+  function init () {
+      winWidth = $(window).innerWidth()
+      winHeight = $(window).height()
+      if(winWidth > 894 && !$('html').hasClass('pc')) {
+          $('.nav').css({
+              position: 'absolute',
+              top: '30px'
+          })
+      } else if (winWidth <=894 &&!$('html').hasClass('mobile')) {
+          $('.nav').css({
+            position: 'absolute',
+            top: '100%',
+            right: '0'
+          })
+      }
+  }
+
 
     var sct = 0;
     var winHeight = $(window).height();
