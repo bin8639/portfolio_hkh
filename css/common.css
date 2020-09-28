@@ -53,6 +53,10 @@ html,
     color: #000;
 }
 
+.logoNav {
+    position: relative
+}
+
 .logoNav h1 {
     width: 100%;
     height: 90px;
@@ -60,17 +64,16 @@ html,
 
 .logoNav .nav {
     position: absolute;
-    top: 30px;
-    left: 40%;
-    display: block;
+    top: 20px;
+    right: 0%;
 }
 
 .logoNav .nav .depth1>li {
     display: inline-block;
     position: relative;
-    padding: 32px 0 28px;
+    padding: 10px 0 10px;
     width: 150px;
-    height: 90px;
+    /* height: 90px; */
     text-align: center;
 }
 
@@ -139,9 +142,9 @@ html,
     background: #fff;
 }
 
-.logoNav.on .decoBox {
+/* .logoNav.on .decoBox {
     display: block;
-}
+} */
 
 #footer {
     text-align: center;
