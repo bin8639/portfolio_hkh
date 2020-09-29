@@ -137,9 +137,9 @@ html,
     background: #fff;
 }
 
-/* .logoNav.on .decoBox {
+.logoNav.on .decoBox {
     display: block;
-} */
+}
 
 #footer {
     text-align: center;
