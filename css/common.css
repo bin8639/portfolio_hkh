@@ -60,16 +60,18 @@ html,
 
 .logoNav .nav {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 0%;
 }
+
 
 .logoNav .nav .depth1>li {
     display: inline-block;
     position: relative;
-    padding: 10px 0 10px;
+    padding: 5px 0 10px;
     width: 150px;
     text-align: center;
+    font-size: 17px;
 }
 
 .logoNav .nav .depth1>li>a {
