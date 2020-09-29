@@ -183,7 +183,7 @@
     if (winWidth > 894 && flag) {
       $(".nav").css({
         position: "absolute",
-        top: "30px",
+        top: "0px",
         display: "block",
       });
       $(".depth2").css({ height: "120px" });
