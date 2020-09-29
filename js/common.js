@@ -174,12 +174,11 @@
   });
 
   // 리사이즈
-  var winWidth, winHeight;
+  var winWidth
   init();
   var flag = true;
   function init() {
     winWidth = $(window).innerWidth();
-    //   winHeight = $(window).height()
     if (winWidth > 894 && flag) {
       $(".nav").css({
         position: "absolute",

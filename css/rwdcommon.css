@@ -36,6 +36,7 @@
         width: auto;
         height: auto;
         text-align: center;
+        border: 1px solid #333;
     }
 
     .logoNav .nav .depth1>li>a {
@@ -49,7 +50,7 @@
         width: 100%;
         height: auto;
         display: none;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
         color: #333;
         z-index: 9999;
