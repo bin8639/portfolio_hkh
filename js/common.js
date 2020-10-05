@@ -131,6 +131,7 @@
   });
 
    // 리사이즈
+   init()
    var winWidth
    var flag = true;
    function init() {
@@ -158,7 +159,7 @@
        flag = true;
      }
    }
-   
+
    init()
 
    $(window).on('resize', function () {
