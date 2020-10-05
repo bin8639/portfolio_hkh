@@ -158,11 +158,12 @@
        flag = true;
      }
    }
+   
    init()
 
-   $(window).resize(function () {
-     init();
-   });
+   $(window).on('resize', function () {
+    init()
+  })
 
    // 모바일 네비박스
    $(".nav .depth1 > li").on('click', function () {
