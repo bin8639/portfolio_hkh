@@ -189,8 +189,10 @@
       }
     },
     function () {
-      $(this).find('.depth2').stop().slideUp(400)
-      $('.decoBox').stop().slideUp(400)
+      if ($('html').hasClass('pc')) {
+        $(this).find('.depth2').stop().slideUp(400)
+        $('.decoBox').stop().slideUp(400)
+      }
     }
   )
 
