@@ -7,11 +7,6 @@
     }
 }
 
-@media only screen and (max-width:950px) {
-    .section_box4 .gallery ul > li > a > img {
-        transform: scale(0.8);
-    }
-}
 
 @media only screen and (max-width:894px) {
 
@@ -73,11 +68,4 @@
         font-size: 30px;
         cursor: pointer;
     }
-}
-
-@media only screen and (max-width: 850px) {
-    .section_box2 .product .box2_img img {
-        transform: scale(0.8);
-    }
-
 }

@@ -17,7 +17,7 @@
         prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
         nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
         responsive: [{
-            breakpoint: 801,
+            breakpoint: 895,
             settings: {
                 arrows: false,
                 fade: true,
