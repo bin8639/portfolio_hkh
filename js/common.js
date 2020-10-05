@@ -179,7 +179,7 @@
   })
 
   // pc 네비박스
-  $('.nav .depth1 > li').hover(
+  $('.nav .depth1').hover(
     function () {
       if ($('html').hasClass('pc')) {
         $(this).find('.depth2').stop().slideDown(400)
