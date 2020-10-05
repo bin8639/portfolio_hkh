@@ -8,7 +8,13 @@
 }
 
 @media only screen and (max-width:894px) {
-    
+    .slide-outer .slide-inner .slide {
+        height: 460px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 850px) {
