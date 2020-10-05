@@ -130,29 +130,91 @@
     $("#secBox").load(url);
   });
 
-  // 탑메뉴 호버시 슬라이드 효과
-  $(".nav > .depth1 > li").hover(
+   // 리사이즈
+   var winWidth
+   var flag = true;
+   function init() {
+     winWidth = $(window).innerWidth();
+     if (winWidth > 894 && flag) {
+       $(".nav").css({
+         position: "absolute",
+         top: "0px",
+         display: "block",
+       });
+       $(".depth2").css({ height: "120px" });
+       $(".open_nav, .close_nav, .depth2").hide();
+       $('html').addClass('pc').removeClass('mobile')
+       flag = false;
+     } else if (winWidth <= 894 && !flag) {
+       $(".open_nav").show();
+       $(".close_nav, .depth2, .nav").hide();
+       $(".nav").css({
+         position: "absolute",
+         top: "100%",
+         display: "none",
+       });
+       $(".depth2").css({ height: "auto" });
+       $('html').addClass('mobile').removeClass('pc')
+       flag = true;
+     }
+   }
+   init()
+
+   $(window).resize(function () {
+     init();
+   });
+
+   // 모바일 네비박스
+   $(".nav .depth1 > li").on('click', function () {
+    if ($('html').hasClass('mobile')) {
+      $(this).toggleClass('on')
+      $(this).find('.depth2').stop().slideToggle(400)
+      $(this).siblings().each(function () {
+        if ($(this).css('display') === 'block') {
+          $(this).find('.depth2').stop().slideUp(400)
+          $(this).removeClass('on')
+        }
+      })
+    }
+  })
+
+  // pc 네비박스
+  $('.nav .depth1 > li').hover(
     function () {
-      winWidth = $(window).innerWidth();
-      if (winWidth > 894) {
-        $(".nav > .depth1").find(".depth2").stop().slideDown(400);
-        $(".decoBox").stop().slideDown(400);
-      } else {
-        $(".decoBox").hide();
-        $(this).find(".depth2").stop().slideDown(400);
+      if ($('html').hasClass('pc')) {
+        $(this).find('.depth2').stop().slideDown(400)
+        $('.decoBox').stop().slideDown(400)
       }
     },
     function () {
-      winWidth = $(window).innerWidth();
-      if (winWidth > 894) {
-        $(".nav > .depth1").find(".depth2").stop().slideUp(400);
-        $(".decoBox").stop().slideUp(400);
-      } else {
-        $(".decoBox").hide();
-        $(this).find(".depth2").stop().slideUp(400);
-      }
+      $(this).find('.depth2').stop().slideUp(400)
+      $('.decoBox').stop().slideUp(400)
     }
-  );
+  )
+
+  // 탑메뉴 호버시 슬라이드 효과
+  // $(".nav > .depth1 > li").hover(
+  //   function () {
+  //     winWidth = $(window).innerWidth();
+  //     if (winWidth > 894) {
+  //       $(".nav > .depth1").find(".depth2").stop().slideDown(400);
+  //       $(".decoBox").stop().slideDown(400);
+  //     } else {
+  //       $(".decoBox").hide();
+  //       $(this).find(".depth2").stop().slideDown(400);
+  //     }
+  //   },
+  //   function () {
+  //     winWidth = $(window).innerWidth();
+  //     if (winWidth > 894) {
+  //       $(".nav > .depth1").find(".depth2").stop().slideUp(400);
+  //       $(".decoBox").stop().slideUp(400);
+  //     } else {
+  //       $(".decoBox").hide();
+  //       $(this).find(".depth2").stop().slideUp(400);
+  //     }
+  //   }
+  // );
 
   // 햄버거버튼 클릭시 네비박스 나타나기
   $(".logoNav .open_nav").on("click", function () {
@@ -173,37 +235,7 @@
     $(".depth2").hide();
   });
 
-  // 리사이즈
-  var winWidth
-  init();
-  var flag = true;
-  function init() {
-    winWidth = $(window).innerWidth();
-    if (winWidth > 894 && flag) {
-      $(".nav").css({
-        position: "absolute",
-        top: "0px",
-        display: "block",
-      });
-      $(".depth2").css({ height: "120px" });
-      $(".open_nav, .close_nav, .depth2").hide();
-      flag = false;
-    } else if (winWidth <= 894 && !flag) {
-      $(".open_nav").show();
-      $(".close_nav, .depth2, .nav").hide();
-      $(".nav").css({
-        position: "absolute",
-        top: "100%",
-        display: "none",
-      });
-      $(".depth2").css({ height: "auto" });
-      flag = true;
-    }
-  }
 
-  $(window).resize(function () {
-    init();
-  });
 
   var sct = 0;
   var winHeight = $(window).height();
