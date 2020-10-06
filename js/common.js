@@ -271,7 +271,7 @@
     var gallNear = $(".section_box4").offset().top - $(this).height() / 2;
     if (sct >= gallNear) {
       $(".section_box4").addClass("on");
-    }
+    } 
   });
 
   // goTop버튼 누르면 오르기
