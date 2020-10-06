@@ -160,7 +160,6 @@
      }
    }
 
-   init()
 
    $(window).on('resize', function () {
     init()
