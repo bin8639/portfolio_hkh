@@ -25,15 +25,13 @@
     }
 
     .section_box2 .product .box2_img {
-        clear: both;
+        float: none;
+        width: 100%;
     }
-
-    .section_box2 .product .box2_img img {
-        max-width: 100%;
-    }
-
+    
     .section_box2 .product .text {
-        clear: both;
+        float: none;
+        width: 100%;
     }
 
     .section_box2 .product .text h2 {
