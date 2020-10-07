@@ -80,3 +80,9 @@
 .product_page table tr td > a > p {
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 939px) { 
+    .product_page table tr td > a > img {
+        transform: scale(0.8);
+    }
+}

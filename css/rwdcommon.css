@@ -11,10 +11,6 @@
 @media only screen and (max-width:894px) {
 
     /* 로고 네비 구역 */
-    .topmenu .login {
-        display: none;
-    }
-
     .logoNav .nav {
         position: absolute;
         top: 100%;

@@ -195,30 +195,6 @@
     }
   )
 
-  // 탑메뉴 호버시 슬라이드 효과
-  // $(".nav > .depth1 > li").hover(
-  //   function () {
-  //     winWidth = $(window).innerWidth();
-  //     if (winWidth > 894) {
-  //       $(".nav > .depth1").find(".depth2").stop().slideDown(400);
-  //       $(".decoBox").stop().slideDown(400);
-  //     } else {
-  //       $(".decoBox").hide();
-  //       $(this).find(".depth2").stop().slideDown(400);
-  //     }
-  //   },
-  //   function () {
-  //     winWidth = $(window).innerWidth();
-  //     if (winWidth > 894) {
-  //       $(".nav > .depth1").find(".depth2").stop().slideUp(400);
-  //       $(".decoBox").stop().slideUp(400);
-  //     } else {
-  //       $(".decoBox").hide();
-  //       $(this).find(".depth2").stop().slideUp(400);
-  //     }
-  //   }
-  // );
-
   // 햄버거버튼 클릭시 네비박스 나타나기
   $(".logoNav .open_nav").on("click", function () {
     $(this).next().stop().slideDown(400);
