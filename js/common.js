@@ -15,51 +15,8 @@
     $("#secBox").load(url);
   });
 
-  // 탑메뉴 클릭시 대표 메뉴 연결
-  $(".depth1 > li > a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#secContainer").remove();
-    $("#secBox").load(url);
-  });
-
-
-  // 회사소개 페이지 연결
-  $(".com_info > li > a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#secContainer").remove();
-    $("#secBox").load(url);
-  });
-
-  // 사업소개 연결
-  $(".buss_info > li > a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#secContainer").remove();
-    $("#secBox").load(url);
-  });
-
-  // 제품소개1 연결
-  $(".prod_info > li > a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#secContainer").remove();
-    $("#secBox").load(url);
-  });
-
-  // 온라인문의 연결
-  $(".qna_info > li > a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#secContainer").remove();
-    $("#secBox").load(url);
-  });
-
-
-
-  // 고객센터 연결
-  $(".cs_info > li > a").on("click", function (e) {
+  // 네비박스 메뉴 연결
+  $(".depth1 li a").on("click", function (e) {
     e.preventDefault();
     var url = $(this).attr("href");
     $("#secContainer").remove();
