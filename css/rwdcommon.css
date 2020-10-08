@@ -34,6 +34,9 @@
         display: block;
     }
 
+    .logoNav .nav .depth1>li:hover>a {
+        border-bottom: 0px solid #000;
+    }
     .logoNav .nav .depth2 {
         position: static;
         top: 100%;
