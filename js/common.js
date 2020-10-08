@@ -131,12 +131,29 @@
   });
 
    // 리사이즈
+  var deviceSize = 894
+  
+  function scrollOX(status) {
+    $('html').css({
+      overflowY: status
+    })
+    var htmlWidth = $('html').width()
+    return htmlWidth
+  }
+
+  var swh = scrollOX('hidden')
+  var sws = scrollOX('scroll')
+  var swd = swh - sws
+
+  if(swd>0) {
+    deviceSize = deviceSize - swd
+  }
+
    init()
    var winWidth
-   var flag = true;
    function init() {
      winWidth = $(window).innerWidth();
-     if (winWidth > 894 && flag) {
+     if (winWidth > deviceSize && !$('html').hasClass('pc')) {
        $(".nav").css({
          position: "absolute",
          top: "0px",
@@ -145,8 +162,7 @@
        $(".depth2").css({ height: "120px" });
        $(".open_nav, .close_nav, .depth2").hide();
        $('html').addClass('pc').removeClass('mobile')
-       flag = false;
-     } else if (winWidth <= 894 && !flag) {
+     } else if (winWidth <= deviceSize && !$('html').hasClass('mobile')) {
        $(".open_nav").show();
        $(".close_nav, .depth2, .nav").hide();
        $(".nav").css({
@@ -156,7 +172,6 @@
        });
        $(".depth2").css({ height: "auto" });
        $('html').addClass('mobile').removeClass('pc')
-       flag = true;
      }
    }
 
