@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1180px) {
+    .row {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+
+@media only screen and (max-width:894px) {
+
+    /* 로고 네비 구역 */
+    .logoNav .nav {
+        position: absolute;
+        top: 100%;
+        width: 400px;
+        right: 0;
+        background: #fff;
+        display: none;
+    }
+
+    .logoNav .nav .depth1>li {
+        display: block;
+        position: relative;
+        padding: 10px 0 10px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        border: 1px solid #333;
+    }
+
+    .logoNav .nav .depth1>li>a {
+        display: block;
+    }
+
+    .logoNav .nav .depth1>li:hover>a {
+        border-bottom: 0px solid #000;
+    }
+    .logoNav .nav .depth2 {
+        position: static;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        display: none;
+        font-size: 15px;
+        text-align: center;
+        color: #333;
+        z-index: 9999;
+    }
+
+    .logoNav .open_nav {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .logoNav .close_nav {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

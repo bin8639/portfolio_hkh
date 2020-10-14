@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#notice {
+    padding-top: 120px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.noticeImg {
+    background-image: url(../images/sub_img5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    position: relative;
+}
+
+.noticeImg .text {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px #333;
+}
+
+.noticeNav {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.noticeNav li {
+    display: inline-block;
+    padding: 45px 35px;
+}
+
+.noticeNav li a {
+    color: #888;
+    font-weight: bold;
+}
+
+.noticeNav li a.on {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.qtnTable {
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.qtnTable col:nth-child(1) {
+    width: 8%;
+}
+
+.qtnTable col:nth-child(2) {
+    width: auto;
+}
+
+.qtnTable col:nth-child(3) {
+    width: 16%;
+}
+
+.qtnTable table {
+    border: none;
+    font-size: 14px;
+}
+
+.qtnTable th,
+.qtnTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.qtnTable tbody td:nth-child(1),
+.qtnTable tbody td:nth-child(3) {
+    text-align: center;
+}
+
+.qtnTable th {
+    background: #f2f2f2;
+    border-top: 1px solid #999;
+}
+
+.qtnTable tbody tr:hover {
+    background: #f2f2f2;
+    transition: all 0.5s;
+}

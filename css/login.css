@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
 
 #login_page {
     padding-top: 120px;
@@ -39,16 +37,14 @@
     padding: 45px 35px;
 }
 
-.login_nav ul li:nth-child(1) {
-    font-size: 30px;
-    color: #333;
+.login_nav ul > li a {
+    color: #888;
     font-weight: bold;
 }
 
-.login_nav ul > li:nth-child(2),
-.login_nav ul > li:nth-child(3),
-.login_nav ul > li:nth-child(4) {
-    color: #888;
+.login_nav ul li a.on {
+    font-size: 30px;
+    color: #333;
     font-weight: bold;
 }
 
@@ -61,12 +57,11 @@
 
 .login_form .login_text {
     border-bottom: 1px solid #ccc;
-    border-width: 18%;
-    width: 18%;
+    width: 20%;
     padding-bottom: 30px;
 }
 
-.login_form .login_text  > p {
+.login_form .login_text > p {
     font-size: 12px;
     padding: 15px 0;
     color: #555;
@@ -133,4 +128,30 @@
     border-radius: 4px;
 }
 
+@media only screen and (max-width:770px) {
+    .login_form .login_text {
+        border-bottom: 1px solid #ccc;
+        width: 60%;
+        padding-bottom: 30px;
+    }
+    
+    .login_form .login_text > p {
+        font-size: 12px;
+        padding: 15px 0;
+        color: #555;
+    }
 
+    .login_form .login_content button {
+        width: 66px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background: #353535;
+        vertical-align: top;
+        margin-top: 5px;
+        margin-left: 8px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+}

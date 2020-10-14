@@ -1,0 +1,149 @@
+<div class="secContainer">
+
+    <section id="qna">
+        <div class="qnaImg">
+            <div>
+                <div class="text">
+                    <h2>고객센터</h2>
+                </div>
+            </div>
+        </div>
+        <div class="qnaPage">
+            <div class="qnaBox row">
+                <ul class="qnaNav">
+                    <li><a href="qna.html" class="on">Q&amp;A</a></li>
+                    <li><a href="cs1on1.html">1:1 문의</a></li>
+                </ul>
+                <div class="qnaTable">
+                    <table>
+                        <caption>공지사항</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일자</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#">질문답변 게시판입니다.</a></td>
+                                <td>한경훈</td>
+                                <td>2020-09-16</td>
+                                <td>330</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form action="#" method="post" class="writeBox">
+                    <input type="submit" value="글쓰기">
+                </form>
+                <form action="#" method="post" class="searchBox">
+                    <select name="searchType" id="searchType">
+                        <option value="subject">글제목</option>
+                        <option value="content">글내용</option>
+                        <option value="writer">작성자</option>
+                    </select>
+                    <input type="text" name="searchKw" id="searchKw">
+                    <input type="submit" value="검색">
+                </form>
+                <div class="numlist">
+                    <span><i class="fas fa-angle-left"></i></span>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <span><i class="fas fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    $('.qnaNav a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+</script>

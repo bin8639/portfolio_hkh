@@ -1,19 +1,13 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
 
 /* 공통구역을 제외한 메인페이지 스타일 */
-#section {
+.section-outer {
     position: relative;
     padding-top: 120px;
 }
 
-.slideOuter {
-    position: relative;
-}
-
-.slideInner {
-    width: 100%;
+/*슬라이드*/
+.slide-inner .slide {
     height: 686px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,36 +15,64 @@
     position: relative;
 }
 
-.slideInner:first-child {
+.slide-inner .slide1 {
     background-image: url(../images/main_visual_1.jpg);
 }
 
-.slideInner:nth-child(2) {
+.slide-inner .slide2 {
     background-image: url(../images/main_visual_2.jpg);
 }
 
-/* .slideInner div:nth-child(2) {
-    display: none;
-} */
+/* 화살표  */ 
+.slide-outer {
+    position: relative;
+}
 
-.slideOuter .dotBox {
+.slide-outer .marrow {
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    cursor: pointer;
+}
+
+.slide-outer .prevArrow {
+    left: 10%;
+    z-index: 999;
+}
+
+.slide-outer .nextArrow {
+    right: 10%;
+}
+
+/* dotBox */
+.slide-outer .slick-dots {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
-.slideOuter .dotBox a {
+.slide-outer .slick-dots li {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    margin: 0 3px;
 }
 
-.slideOuter .dotBox a.active {
-    background: rgba(255, 255, 255, 1);
+.slide-outer .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    text-indent: -99999px;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.slide-outer .slick-dots li.slick-active button {
+    background: #fff;
+    width: 40px;
+    border-radius: 50px;
 }
 
 .section_box1 {
@@ -76,9 +98,34 @@
     padding-top: 15px;
 }
 
-.section_box1 .mid_nav > li > a:hover img {
-    transform: translateY(-12px);
-    transition: all 0.4s;
+.section_box1 .mid_nav {
+    overflow: hidden;
+}
+
+.section_box1 .mid_nav .m_navli {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.section_box1.on .mid_nav .m_navli {
+    animation: fadeInUp 1s both 0s;
+}
+
+.section_box1.on .mid_nav .m_navli:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+
+.section_box1.on .mid_nav .m_navli:nth-child(2) {
+    animation-delay: 0.4s; 
+}
+
+.section_box1.on .mid_nav .m_navli:nth-child(3) {
+    animation-delay: 0.8s; 
+}
+
+.section_box1.on .mid_nav .m_navli:nth-child(4) {
+    animation-delay: 1s; 
 }
 
 .section_box2 {
@@ -94,7 +141,7 @@
 
 .section_box2 .product .text {
     float: right;
-    width: 45%;
+    width: 50%;
 }
 
 .section_box2 .product .text > h2 {
@@ -118,6 +165,30 @@
 
 .section_box2 .product .text > button:hover {
     background: #f0f0f0;
+}
+
+.section_box2 .product {
+    overflow: hidden;
+}
+
+.section_box2 .product .box2_img {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.section_box2 .product .text {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.section_box2.on .product .box2_img {
+    animation: fadeInLeft 1.3s both;
+}
+
+.section_box2.on .product .text {
+    animation: fadeInRight 1.3s both;
 }
 
 .section_box3 {
@@ -157,6 +228,20 @@
     transition: all 0.5s;
 }
 
+.section_box3 .info {
+    overflow: hidden;
+}
+
+.section_box3 .info .info_nav .info_navli {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.section_box3.on .info .info_nav .info_navli {
+    animation: fadeInUp 0.8s both;
+}
+
 .section_box4 {
     padding: 110px 0 100px;
     text-align: center;
@@ -168,6 +253,11 @@
     width: 33.3333%;
 }
 
+.section_box4 .gallery > ul > li > a > img:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
 .section_box4 .gallery > ul > li > a > p {
     padding-top: 15px;
     font-size: 14px;
@@ -175,6 +265,40 @@
 
 .section_box4 .gallery > ul > li > a > p:hover {
     text-decoration: underline;
+}
+
+.section_box4 .gallery {
+    overflow: hidden;
+}
+
+.section_box4 .gallery .gallery_nav .g_navli:nth-child(1) {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.section_box4 .gallery .gallery_nav .g_navli:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.section_box4 .gallery .gallery_nav .g_navli:nth-child(3) {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.section_box4.on .gallery .gallery_nav .g_navli:nth-child(1) {
+    animation: fadeInLeft 1s both;
+}
+
+.section_box4.on .gallery .gallery_nav .g_navli:nth-child(2) {
+    animation: fadeInUp 1s both;
+}
+
+.section_box4.on .gallery .gallery_nav .g_navli:nth-child(3) {
+    animation: fadeInRight 1s both;
 }
 
 .section_box5 {

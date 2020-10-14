@@ -40,6 +40,16 @@ table {
     width: 100%;
 }
 
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+caption {
+    display: none;
+}
+
 button,
 input {
     border: none
@@ -82,7 +92,7 @@ section {
     width: 0;
     height: 0;
     overflow: hidden;
-    text-indent: -9999px;
+    text-indent: -999999999px;
     font-size: 0px;
     line-height: 0;
 }

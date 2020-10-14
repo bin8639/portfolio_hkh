@@ -39,32 +39,38 @@
     padding: 45px 35px;
 }
 
-.login_nav ul li:nth-child(3) {
+.login_nav ul > li a {
+    color: #888;
+    font-weight: bold;
+}
+
+.login_nav ul li a.on {
     font-size: 30px;
     color: #333;
     font-weight: bold;
 }
 
-.login_nav ul > li:nth-child(1),
-.login_nav ul > li:nth-child(2),
-.login_nav ul > li:nth-child(4) {
-    color: #888;
-    font-weight: bold;
-}
-
 .privacy_text { 
     padding-top: 25px;
-    height: 900px;
+    height: 600px;
     border-bottom: 1px solid #ccc;
 }
 
-.privacy_text  h3 {
-    font-size: 16px;
+.privacy_text .p_text > h3 {
+    font-size: 20px;
     color: #333;
-    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
-.privacy_text  p {
+.privacy_text .p_text > h3 > i {
+    float: right;
+    margin: 5px 15px 0;
+}
+
+.privacy_text .p_text > p {
     font-size: 13px;  
     padding-bottom: 25px;
     line-height: 2em;

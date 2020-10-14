@@ -1,0 +1,137 @@
+<div class="secContainer">
+
+    <section id="csCenter">
+        <div class="qnaImg">
+            <div>
+                <div class="text">
+                    <h2>고객센터</h2>
+                </div>
+            </div>
+        </div>
+        <div class="csPage">
+            <div class="csBox row">
+                <ul class="qnaNav">
+                    <li><a href="qna.html">Q&amp;A</a></li>
+                    <li><a href="cs1on1.html" class="on">1:1문의</a></li>
+                </ul>
+                <div class="subTit">
+                </div>
+                <div class="csBox row">
+                    <form action="#" method="post" class="cs_form">
+                        <fieldset>
+                            <legend>1:1문의양식</legend>
+                            <ul class="cs_list">
+                            
+                                <li>
+                                    <div class="label_box">
+                                        <label for="name_lbl" class="tit_lbl">이름</label>
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" id="name_lbl" class="w150">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label_box">
+                                        <label for="phone_lbl" class="tit_lbl">전화번호</label>
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" id="phone_lbl" class="w80">
+                                    </div>
+                                    <span>-</span>
+                                    <div class="input_box">
+                                        <input type="text" id="phone_lbl2" class="w80">
+                                    </div>
+                                    <span>-</span>
+                                    <div class="input_box">
+                                        <input type="text" id="phone_lbl3" class="w80">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label_box">
+                                        <label for="email_lbl" class="tit_lbl">이메일</label>
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" id="email_lbl" class="w500">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label_box">
+                                        <label for="site_lbl" class="tit_lbl">주소</label>
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" id="site_lbl" class="w500">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label_box">
+                                        <label for="title_lbl" class="tit_lbl">제목</label>
+                                    </div>
+                                    <div class="input_box">
+                                        <input type="text" id="title_lbl" class="w650">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="label_box cont_lbl_box">
+                                        <label for="cont_lbl" class="tit_lbl">내용</label>
+                                    </div>
+                                    <div class="input_box cont_box">
+                                        <textarea id="cont_lbl" placeholder="상담요청 내용을 자세히 남겨주시면 도움을 드리겠습니다. (500글자 이내)"
+                                            maxlength="500"></textarea>
+                                        <p class="text_left">남은글자 : 500</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="label_box">
+                                        <label for="file_lbl" class="tit_lbl">파일첨부</label>
+                                    </div>
+                                    <div class="input_box file_box">
+                                        <input type="file">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="agree_box">
+                                        <label for="agree_lbl" class="tit_lbl">• 개인정보의 수집 및 이용목적</label>
+                                        <div class="agree_checkbox">
+                                            <input type="checkbox" id="agree_check">
+                                            <label for="agree_check">개인정보의 수집 및 이용목적에 동의합니다.</label>
+                                        </div>
+                                        <div class="agree_textbox">
+                                            <textarea id="gree_text">▶ 개인정보의 수집 및 이용목적
+        - 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용
+        - 고지사항 전달, 불만처리 의사소통 경로 확보, 물품배송 시 정확한 배송지 정보 확보
+        - 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료
+        - 기타 원활한 양질의 서비스 제공 등
+        
+        ▶ 수집하는 개인정보의 항목
+        - 이름, 이메일, 주민등록번호, 주소, 연락처, 핸드폰번호, 그 외 선택항목
+        
+        ▶ 개인정보의 보유 및 이용기간
+        - 원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이 파기합니다.
+        - 다만, 원활한 서비스의 상담을 위해 상담 완료 후 내용을 3개월간 보유할 수 있으며
+        전자상거래에서의 소비자보호에 관한 법률 등 타법률에 의해 보존할 필요가 있는 경우에는 일정기간 보존합니다.</textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn">
+                                <button type="submit">확인</button>
+                                <button type="reset">취소</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<script>
+    $('.qnaNav a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+</script>

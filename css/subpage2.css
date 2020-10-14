@@ -75,3 +75,19 @@
 .business .bot_img {
     padding-top: 15px;
 }
+
+@media only screen and (max-width: 819px) {
+    .business .top_img,
+    .business .bot_img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .business {
+        text-align: center;
+        height: 800px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+ 

@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
+
 
 #join_page {
     padding-top: 120px;
@@ -39,16 +38,14 @@
     padding: 45px 35px;
 }
 
-.login_nav ul li:nth-child(2) {
-    font-size: 30px;
-    color: #333;
+.login_nav ul > li a {
+    color: #888;
     font-weight: bold;
 }
 
-.login_nav ul > li:nth-child(1),
-.login_nav ul > li:nth-child(3),
-.login_nav ul > li:nth-child(4) {
-    color: #888;
+.login_nav ul li a.on {
+    font-size: 30px;
+    color: #333;
     font-weight: bold;
 }
 
@@ -111,7 +108,7 @@
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin-left: 8px;
+    margin-left: 8px;   
     font-size: 14px;
 }
 
@@ -181,4 +178,42 @@
 .join_form .btn input:hover {
     cursor: pointer;
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 718px) {
+    .register_box {
+        height: 1500px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .join_form .tit_lbl {
+        display: block;
+        width: 100%;
+        line-height: 45px;
+        font-weight: bold;
+        font-size: 17px;
+        letter-spacing: -2px;
+        padding-left: 20px;
+    }
+
+    .join_form .info_list .info_content .id_check {
+        margin-top: 20px;
+    }
+    
+    .join_form .info_content {
+        display: block;
+        width: 100%;
+    }
+
+    .join_form .w320 {
+        width: 100%;
+    }
+
+    .join_form .w160 {
+        width: 100%;
+    }
+
+    .join_form #email_lbl + span {
+        display: block;
+    }
 }
