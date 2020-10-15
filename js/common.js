@@ -16,14 +16,14 @@
   });
 
   // 탑메뉴 클릭시 대표 메뉴 연결
-  $(".depth1 >li > a").on("click", function (e) {
-    e.preventDefault();
-    if ($('html').hasClass('pc')) {
-      var url = $(this).attr("href");
-      $("#secContainer").remove();
-      $("#secBox").load(url);
-    }
-  });
+  // $(".depth1 >li > a").on("click", function (e) {
+  //   e.preventDefault();
+  //   if ($('html').hasClass('pc')) {
+  //     var url = $(this).attr("href");
+  //     $("#secContainer").remove();
+  //     $("#secBox").load(url);
+  //   }
+  // });
   
   $(".depth2 >li > a").on("click", function (e) {
     e.preventDefault();
@@ -89,19 +89,36 @@
   })
 
    // 모바일 네비박스
-   $(".nav .depth1 > li > a").on('click', function (e) {
-     e.preventDefault()
-    if ($('html').hasClass('mobile')) {
-      $(this).parent().toggleClass('on')
-      $(this).parent().find('.depth2').stop().slideToggle(400)
-      $(this).parent().siblings().each(function () {
-        if ($(this).find('.depth2').css('display') === 'block') {
-          $(this).find('.depth2').stop().slideUp(400)
-          $(this).removeClass('on')
-        }
-      })
+   $(".depth1 > li > a").on("click", function (e) {
+    e.preventDefault();
+    if ($("html").hasClass("mobile")) {
+      if ($(this).next().is(".depth2")) {
+        $(this).parent().toggleClass("on");
+        $(this).parent().find(".depth2").stop().slideToggle(400);
+        $(this)
+          .parent()
+          .siblings()
+          .each(function () {
+            if ($(this).find(".depth2").css("display") === "block") {
+              $(this).find(".depth2").slideUp(400);
+              $(this).removeClass("on");
+            }
+          });
+      } else if (!$(this).next().is(".depth2")) {
+        var url = $(this).attr("href");
+        $("#secContainer").remove();
+        $("#secBox").load(url);
+        $(".open_nav").show();
+        $(".logoNav .nav, .close_nav").hide();
+        $(".depth1 > li").removeClass("on");
+      }
+    } else if ($("html").hasClass("pc")) {
+      var url = $(this).attr("href");
+      $("#secContainer").remove();
+      $("#secBox").load(url);
     }
-  })
+  });
+
 
   // pc 네비박스
   $('.nav .depth1 > li').hover(
